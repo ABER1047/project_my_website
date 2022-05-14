@@ -1,201 +1,1500 @@
 <!doctype html>
-
 <html lang = "ko">
     <head></head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width = divice-width, initial-scale = 1, minimum-scale = 1">
+    <link href = "main.css" rel = "stylesheet">
 
     <body>
-        <div class = "first_theme_bg">
-          <style>
-                div
-                {
-                background : #1B1B1B;
-                width : 100%
-                padding : 64px;
-                }
-            </style>
-        </div>
-    
-        <div class = "first_theme">
-            <style>
-                .title
-                {
-                font-size : 128px;
-                font : "Bebas Neue";
-                color : #E4DAD1;
-                text-align: left;
-                padding : 64px;
-                margin : 32px;
-                margin-bottom : -96px;
-                }
-                
-                .title_small
-                {
-                font-size : 48px;
-                font : "Bebas Neue";
-                color : #8d7c6d;
-                text-align: left;
-                padding : 64px;
-                line-height : 0px;
-                margin : -64px;
-                margin-left: 32px;
-                margin-top : -72px;
-                margin-bottom : -32px;
-                }
-                
-                .desc_first
-                {
-                font-size : 16px;
-                font : "Open Sans";
-                color : #c5bbb2;
-                text-align: left;
-                padding : 11px;
-                margin-top : 48px;
-                margin-left: 96px;
-                }
-                
-                .desc
-                {
-                font-size : 16px;
-                font : "Open Sans";
-                color : #c5bbb2;
-                text-align: left;
-                padding : 11px;
-                margin-top : -32px;
-                margin-left: 96px;
-                }
-                
-                .first_theme
-                {
-                width : 100%;
-                background : #1B1B1B;
-                height : 540px;
-                }
-            </style>
-        
-            <div class = "info_f">
-            <h1 class = "title">Hello!</h1>
-            <h2 class = "title_small">안녕하세요!</h2>
-            <h2 class = "title_small">こんにちは!</h2>
-            <p class = "desc_first">해당 사이트는 포트폴리오 용도로 제작되었으며,</p>
-            <p class = "desc">사이트에 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
+        <div class = "full_background">
+            <div class = "first_theme_bg">
+                <style>
+                    .full_background
+                    {
+                    background : #02050C;
+                    width : 101%;
+                    margin-left: -8px;
+                    }
+                </style>
             </div>
-        </div>
-        
-        
-        <div class = "select_menu">
-            <style>
-                li
-                {
-                list-style : none;
-                }
             
-                .select_menu
-                {
-                width : 100%;
-                background : #1B1B1B;
-                }
+            <div class = "first_theme">
+                <style>
+                    .trailer_bg
+                    {
+                    margin-left: -8px;
+                    margin-top: -32px;
+                    width : 101%;
+                    position : absolute;
+                    transition : filter 0.1s;
+                    }
                 
-                .title_sec
-                {
-                font-size : 48px;
-                font : "Open Sans";
-                color : #c5bbb2;
-                text-align: center;
-                padding : 11px;
-                margin-top : 600px;
-                margin-left: 0px;
-                }
+                    .title
+                    {
+                    position : absolute;
+                    display: block;
+                    font-size : 162px;
+                    font : "Bebas Neue";
+                    color : #E7D2B5;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-bottom : -96px;
+                    }
+                    
+                    .title_small1
+                    {
+                    position : absolute;
+                    font-size : 64px;
+                    font : "Bebas Neue";
+                    color : #AD8264;
+                    text-align: left;
+                    padding : 64px;
+                    line-height : 0px;
+                    margin : 64px;
+                    margin-left: 32px;
+                    margin-top : 0px;
+                    margin-bottom : 64px;
+                    top : 260px;
+                    }
+                    
+                    .title_small2
+                    {
+                    position : absolute;
+                    font-size : 64px;
+                    font : "Bebas Neue";
+                    color : #AD8264;
+                    text-align: left;
+                    padding : 64px;
+                    line-height : 0px;
+                    margin : 64px;
+                    margin-left: 32px;
+                    margin-top : 0px;
+                    margin-bottom : 64px;
+                    top : 320px;
+                    }
+                    
+                    .desc_first
+                    {
+                    position : absolute;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : 48px;
+                    margin-left: 96px;
+                    top : 450px;
+                    }
+                    
+                    .desc
+                    {
+                    position : absolute;
+                    font-size : 16px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : 48px;
+                    margin-left: 96px;
+                    top : 475px;
+                    }
+                    
+                    .first_theme
+                    {
+                    width : 101%;
+                    background : #ffffff00;
+                    height : 640px;
+                    opacity : 1;
+                    transition : filter 0.5s;
+                    }
+                    
+                    .trailer_bg_box
+                    {
+                    margin-left : 0px;
+                    position : absolute;
+                    width : 100%;
+                    background : #02050C;
+                    top : 860px;
+                    height : 320px;
+                    }
+                </style>
                 
-                .title_sec_small
-                {
-                font-size : 24px;
-                font : "Open Sans";
-                color : #8d7c6d;
-                text-align: center;
-                padding : 11px;
-                margin-top : -48px;
-                margin-left: 0px;
-                height : 64px;
-                }
+                <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
+                    <video autoplay muted loop playsinline>
+                    <source src = "imgs/page_trailer.mp4" type = "video/mp4">
+                    </video>
+                    
+                    <script src = "https://code.jquery.com/jquery-3.3.1.js">
+                    </script>
+                    
+                    <script type = "text/javascript">
+                        $(window).scroll(function()
+                        {
+                        var scroll = $(window).scrollTop();
+                            $('.trailer_bg').css(
+                            {
+                            filter : "blur(" + (scroll*0.05) + "px)"
+                            })
+                        })
+                        
+                    </script>
+                    
+                    <style>
+                    .trailer_bg
+                    {
+                    opacity : scroll;
+                    }
+                    </style>
+                </div>
                 
-                .selector_buttons
-                {
-                cursor : pointer;
-                background-color : #c5bbb2;
-                width : 12px;
-                height : 12px;
-                border-radius: 6px;
-                margin-top : 32px;
-                margin-bottom : 32px;
-                margin-left : 50%;
-                }
+                
+                <div class = "trailer_bg_box"></div>
+                
+            
+                <div class = "info_f">
+                <h1 class = "title">Hello!</h1>
+                <h2 class = "title_small1">안녕하세요!</h2>
+                <h2 class = "title_small2">こんにちは!</h2>
+                <p class = "desc_first">해당 사이트는 포트폴리오 용도로 제작되었으며,</p>
+                <p class = "desc">해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
+                </div>
+            </div>
+            
+            
+            <div class = "select_menu">
+                <style>
+                    li
+                    {
+                    list-style : none;
+                    }
+                
+                    .select_menu
+                    {
+                    width : 101%;
+                    margin-left : -16px;
+                    background : #0C1019;
+                    }
+                    
+                    .title_sec
+                    {
+                    background : #0C1019;
+                    font-size : 64px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-top : 1200px;
+                    margin-left: 0px;
+                    }
+                    
+                    .title_sec_small
+                    {
+                    font-size : 32px;
+                    font : "Open Sans";
+                    color : #AD8264;
+                    text-align: left;
+                    padding : 64px;
+                    margin : 32px;
+                    margin-top : -160px;
+                    margin-left: 0px;
+                    margin-bottom : 64px;
+                    height : 64px;
+                    }
+                    
+                    .showcase_title_sec
+                    {
+                    font-size : 48px;
+                    font : "Open Sans";
+                    color : #E0C9A8;
+                    text-align: center;
+                    padding : 11px;
+                    margin-top : 0px;
+                    margin-left: 0px;
+                    }
+                    
+                    .showcase_title_sec_small
+                    {
+                    font-size : 24px;
+                    font : "Open Sans";
+                    color : #AD8264;
+                    text-align: left;
+                    padding : 11px;
+                    margin-top : -60px;
+                    margin-left: 50%;
+                    margin-bottom : 0px;
+                    height : 64px;
+                    }
+                    
+                    .showcase1_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : 24px;
+                    margin-bottom : 0px;
+                    margin-left : 45.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase1_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 48.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase1_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 51.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase1_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 54.5%;
+                    transition : background 0.2s;
+                    }
+
+                    
+                    .showcase1_image
+                    {
+                    margin-left: 31.8%;
+                    width : 400vw;
+                    transition : transform 0.4s;
+                    }
+                    
+                    .inner
+                    {
+                    width : 100vw;
+                    float : left;
+                    }
+                
+                </style>
+                
+                <div class = "select_menu_title">
+                    <h1 class = "title_sec">Showcase</h1>
+                    <h2 class = "title_sec_small">쇼케이스</h2>
+                </div>
+                
+                <style>
+                    .showcase_theme_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -128px;
+                    margin-bottom : 0px;
+                    margin-left : 72px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_theme_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 104px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_theme_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 136px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_theme_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 168px;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase_2
+                    {
+                    margin-top : -1272px;
+                    transform : translate(-100vw);
+                    }
+                    
+                    .showcase_3
+                    {
+                    margin-top : -1272px;
+                    transform : translate(-100vw);
+                    }
+                    
+                    .showcase_4
+                    {
+                    margin-top : -1272px;
+                    transform : translate(-100vw);
+                    }
+                </style>
+                
+                <div class = "theme_selector_buttons">
+                    <li>
+                        <div class = "showcase_theme_button1"></div>
+                        <div class = "showcase_theme_button2"></div>
+                        <div class = "showcase_theme_button3"></div>
+                        <div class = "showcase_theme_button4"></div>
+                        
+                        <script>
+                        document.querySelector(".showcase_theme_button1").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase_1").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase_2").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_3").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_4").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_theme_button1").style.background = "#AD8264"
+                        document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase_theme_button2").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase_1").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_2").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase_3").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_4").style.transform = "translate(-100vw)"
+                        
+                        document.querySelector(".showcase_theme_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button2").style.background = "#AD8264"
+                        document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase_theme_button3").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase_1").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_2").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_3").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase_4").style.transform = "translate(-100vw)"
+                        
+                        document.querySelector(".showcase_theme_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button3").style.background = "#AD8264"
+                        document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase_theme_button4").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase_1").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_2").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_3").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase_4").style.transform = "translate(0vw)"
+                        
+                        document.querySelector(".showcase_theme_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase_theme_button4").style.background = "#AD8264"
+                        })
+                        </script>
+                    </li>
+                    
+                    
+                    <style>
+                    .under_box_bg
+                    {
+                    margin-bottom: -1350px;
+                    width : 101%;
+                    height : 1350px;
+                    background : #0C1019;
+                    }
+                    </style>
+                    
+                    <div class = "under_box_bg">
+                    
+                    </div>
+                </div>
+                
+                    
+                <div class = "showcase_1">
+                    <div class = "showcase_title">
+                        <h1 class = "showcase_title_sec">Project Wak</h1>
+                        <h2 class = "showcase_title_sec_small">프로젝트 왁</h2>
+                    </div>
+            
+                    
+                    <div style = "overflow : hidden">
+                        <div class = "showcase1_image">
+                            <div class = "inner">
+                            <img src = "imgs/test1.gif">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/test2.gif">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/test3.gif">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/test4.gif">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "selector_buttons">
+                        <li>
+                            <div class = "showcase1_button1"></div>
+                            <div class = "showcase1_button2"></div>
+                            <div class = "showcase1_button3"></div>
+                            <div class = "showcase1_button4"></div>
+                        </li>
+            
+                        
+                        <script>
+                        document.querySelector(".showcase1_button1").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#AD8264"
+                        document.querySelector(".showcase1_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase1_button2").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button2").style.background = "#AD8264"
+                        document.querySelector(".showcase1_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase1_button3").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(-200vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button3").style.background = "#AD8264"
+                        document.querySelector(".showcase1_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase1_button4").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase1_image").style.transform = "translate(-300vw)"
+                        document.querySelector(".showcase1_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase1_button4").style.background = "#AD8264"
+                        })
+                        </script>
+                    </div>
+                
+                    
+                    
+                    
+                    <style>
+                        .under_box_selector_buttons
+                        {
+                        margin-left : 50%;
+                        height : 360px;
+                        }
+                        
+                        .in_box_text
+                        {
+                        background : #0C1019;
+                        font-size : 16px;
+                        font : "Open Sans";
+                        text-align: center;
+                        color : #E0C9A8;
+                        margin-top : 32px;
+                        margin-left : -100%;
+                        margin-bottom : 32px;
+                        }
+                        
+                        .first_text_accent
+                        {
+                        font-size : 32px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        margin-right: -8px;
+                        color : #E0C9A8;
+                        }
+                        
+                        .text_accent
+                        {
+                        color : #E0C9A8;
+                        font-size : 17.5px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        }
+                    </style>
+                        
+                    <div class = "under_box_selector_buttons">
+                        <div class = "in_box_text">
+                            <!-- theme 1 -->
+                            <span class = "first_text_accent">
+                            프
+                            </span>
+                            
+                            <span>
+                            로젝트 왁은 2023년도에 유튜버 <span class = "text_accent">우왁굳</span>을 위해 만들어진 팬게임이며,<br>소울라이크 느낌의 액션 RPG 장르의 게임 입니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 2 -->
+                            <span>
+                            개발은 음원을 제외한 모든 부분 전부 <span class = "text_accent">1인 개발</span>로 제작되었으며,<br>게임 판매 플렛폼인 Steam(스팀)에 판매되는 액션 RPG게임 급의 퀄리티로 제작하는게 목표였기 때문에<br>비주얼 적으로나, 게임 플레이 적으로나 꽤나 스케일이 크게 제작되었습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 3-->
+                            <span>
+                            테스터는 대략 <span class = "text_accent">90명</span>이 넘는 분들이 지원을 해주셨고,<br><br><span class = "text_accent">'난이도가 꽤나 어렵지만, 재미있었다'</span><br><br><span class = "text_accent">'RPG게임 답게 여러 스테이지 탐험과 각 보스들을 공략하는 맛이 있었다'</span><br><br>와 같은 평을 해주셨으며, 일부 테스터 분들은<br><br><span class = "text_accent">"조금 더 즐기고 싶은데 컨텐츠좀 더 추가 해주세요"</span><br><br>등등의 평을 남겨주셨습니다.
+                            </span>
+                           
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <style>
+                    .showcase1_trailer_button
+                    {
+                    cursor : pointer;
+                    background-color : #547282; 
+                    color : white;
+                    width : 192px;
+                    height : 48px;
+                    margin-top : 256px;
+                    margin-bottom : 0px;
+                    margin-left : 39.5%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #547282;
+                    line-height : 44px;
+                    }
+                    
+                    .showcase1_code_button
+                    {
+                    cursor : pointer;
+                    background-color : #0C1019;
+                    color : white;
+                    width : 192px;
+                    height : 48px;
+                    margin-top : -52px;
+                    margin-bottom : 0px;
+                    margin-left : 50.3%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #2E465C;
+                    line-height : 44px;
+                    }
+                    
+                    .hyperlink
+                    {
+                    text-decoration : none;
+                    }
+                    
+                    </style>
+                    
+                    <li>
+                        <a class = "hyperlink" href = "https://youtu.be/UB72TRMkehI">
+                        <div class = "showcase1_trailer_button">Watch Trailer</div>
+                        </a>
+                        
+                        <a class = "hyperlink" href = "https://github.com/ABER1047/Project-wak">
+                        <div class = "showcase1_code_button">Source Code</div>
+                        </a>
+                    </li>
+                    
+                    <script>
+                    document.querySelector(".showcase1_trailer_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase1_trailer_button").style.background = "#446A83"
+                    document.querySelector(".showcase1_trailer_button").style.border = "2px solid #446A83"
+                    })
+                    
+                    document.querySelector(".showcase1_trailer_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase1_trailer_button").style.background = "#547282"
+                    document.querySelector(".showcase1_trailer_button").style.border = "2px solid #547282"
+                    })
+                    
+                    document.querySelector(".showcase1_code_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase1_code_button").style.background = "#2E465C"
+                    })
+                    
+                    document.querySelector(".showcase1_code_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase1_code_button").style.background = "#0C1019"
+                    })
+                    </script>
+                </div>
+                
+                
+                
+                
+                <div class = "showcase_2">
+                    <div class = "showcase_title">
+                        <h1 class = "showcase_title_sec">Arena of Wakgood</h1>
+                        <h2 class = "showcase_title_sec_small">아레나 오브 왁굳</h2>
+                    </div>
+                    
+                    <style>
+                    .showcase2_image
+                    {
+                    margin-left: 31.8%;
+                    width : 400vw;
+                    transition : transform 0.4s;
+                    }
+                    
+                    .showcase2_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : 24px;
+                    margin-bottom : 0px;
+                    margin-left : 45.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase2_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 48.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase2_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 51.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase2_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 54.5%;
+                    transition : background 0.2s;
+                    }
+                    </style>
+                    
+                    <div style = "overflow : hidden">
+                        <div class = "showcase2_image">
+                            <div class = "inner">
+                            <img src = "imgs/arena_wak1.gif" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/arena_wak2.gif" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/arena_wak3.gif" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/arena_wak4.gif" width = "690" height = "388">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "selector_buttons">
+                        <li>
+                            <div class = "showcase2_button1"></div>
+                            <div class = "showcase2_button2"></div>
+                            <div class = "showcase2_button3"></div>
+                            <div class = "showcase2_button4"></div>
+                        </li>
+            
+                        
+                        <script>
+                        document.querySelector(".showcase2_button1").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase2_image").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase2_button1").style.background = "#AD8264"
+                        document.querySelector(".showcase2_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase2_button2").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase2_image").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase2_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button2").style.background = "#AD8264"
+                        document.querySelector(".showcase2_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase2_button3").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase2_image").style.transform = "translate(-200vw)"
+                        document.querySelector(".showcase2_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button3").style.background = "#AD8264"
+                        document.querySelector(".showcase2_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase2_button4").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase2_image").style.transform = "translate(-300vw)"
+                        document.querySelector(".showcase2_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase2_button4").style.background = "#AD8264"
+                        })
+                        </script>
+                    </div>
+                
+                    
+                    
+                    
+                    <style>
+                        .under_box_selector_buttons
+                        {
+                        margin-left : 50%;
+                        height : 360px;
+                        }
+                        
+                        .in_box_text
+                        {
+                        font-size : 16px;
+                        font : "Open Sans";
+                        text-align: center;
+                        color : #E0C9A8;
+                        margin-top : 32px;
+                        margin-left : -100%;
+                        margin-bottom : 32px;
+                        }
+                        
+                        .first_text_accent
+                        {
+                        font-size : 24px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        margin-right: -8px;
+                        }
+                        
+                        .text_accent
+                        {
+                        font-size : 17.5px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        }
+                        
+                    </style>
+                        
+                    <div class = "under_box_selector_buttons">
+                        <div class = "in_box_text">
+                            <!-- theme 1 -->
+                            <span class = "first_text_accent">
+                            아
+                            </span>
+                            
+                            <span>
+                            레나 오브 왁굳은 2021년도에 유튜버 <span class = "text_accent">우왁굳</span>을 위해 만들어진 팬게임이며,<br>실시간 대전(PVP) 및 액션 장르의 게임 입니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 2-->
+                            <span>
+                            각 플레이어들이 자신의 무기를 선택하여 대전하며,<br>각기 다른 <span class = "text_accent">게임 모드</span>와 여러 <span class = "text_accent">맵</span>들을 통해 다양한 플레이를 할 수 있습니다.<br>또한, <span class = "text_accent">채팅</span> 및 <span class = "text_accent">이모티콘</span>기능을 통해 플레이어들 끼리 서로 대화를 주고 받을 수 있습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 3 -->
+                            <span>
+                            개발은 음원을 제외한 모든 부분 전부 <span class = "text_accent">1인 개발</span>로 제작되었으며,<br>대략 <span class = "text_accent">15명</span>(비공개 테스트)의 테스터 분들과 함께 개발을 진행하였으며, 추후 공개 테스트로 전환했습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 4 -->
+                            <span>
+                            통신 방식은 P2P방식을 채택했으며, 서버는 <span class = "text_accent">공식 서버</span>와, <span class = "text_accent">커뮤니티 서버</span>로 나눠뒀습니다.<br>(커뮤니티 서버의 경우 직접 방을 만들어 초대코드를 통해 초대하는 방식)<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 5 -->
+                            <span>
+                            첫 출시 당시, 예상보다 <span class = "text_accent">너무 많은 접속자</span>(대략 100~150명 정도)로 인해 서버가 마비됨으로 써,<br><span class = "text_accent">우왁굳</span>님의 방송에선 진행 할 수 없게 되었습니다.<br><br><br><br>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    
+                    <style>
+                    .showcase2_trailer_button
+                    {
+                    cursor : pointer;
+                    background-color : #547282; 
+                    color : white;
+                    width : 192px;
+                    height : 48px;
+                    margin-top : 256px;
+                    margin-bottom : 0px;
+                    margin-left : 39.5%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #547282;
+                    line-height : 44px;
+                    }
+                    
+                    .showcase2_code_button
+                    {
+                    cursor : pointer;
+                    background-color : #0C1019;
+                    color : white;
+                    width : 192px;
+                    height : 48px;
+                    margin-top : -52px;
+                    margin-bottom : 0px;
+                    margin-left : 50.3%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #2E465C;
+                    line-height : 44px;
+                    }
+                    
+                    .hyperlink
+                    {
+                    text-decoration : none;
+                    }
+                    
+                    </style>
+                    
+                    <li>
+                        <a class = "hyperlink" href = "https://youtu.be/dbzp09Ly1CY">
+                        <div class = "showcase2_trailer_button">Watch Trailer</div>
+                        </a>
+                        
+                        <a class = "hyperlink" href = "https://github.com/ABER1047/Arena-of-woowakgood">
+                        <div class = "showcase2_code_button">Source Code</div>
+                        </a>
+                        
+                    </li>
+                    
+                    <script>
+                    document.querySelector(".showcase2_trailer_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase2_trailer_button").style.background = "#446A83"
+                    document.querySelector(".showcase2_trailer_button").style.border = "2px solid #446A83"
+                    })
+                    
+                    document.querySelector(".showcase2_trailer_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase2_trailer_button").style.background = "#547282"
+                    document.querySelector(".showcase2_trailer_button").style.border = "2px solid #547282"
+                    })
+                    
+                    document.querySelector(".showcase2_code_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase2_code_button").style.background = "#2E465C"
+                    })
+                    
+                    document.querySelector(".showcase2_code_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase2_code_button").style.background = "#0C1019"
+                    })
+                    </script>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class = "showcase_3">
+                    <div class = "showcase_title">
+                        <h1 class = "showcase_title_sec">Astronuat</h1>
+                        <h2 class = "showcase_title_sec_small">아스트로넛</h2>
+                    </div>
+                    
+                    <style>
+                    .showcase3_image
+                    {
+                    margin-left: 31.8%;
+                    width : 400vw;
+                    transition : transform 0.4s;
+                    }
+                    
+                    .showcase3_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : 24px;
+                    margin-bottom : 0px;
+                    margin-left : 45.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase3_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 48.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase3_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 51.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase3_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 54.5%;
+                    transition : background 0.2s;
+                    }
+                    </style>
+                    
+                    <div style = "overflow : hidden">
+                        <div class = "showcase3_image">
+                            <div class = "inner">
+                            <img src = "imgs/Project Astronaut1.gif" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/Project Astronaut2.gif" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/Project Astronaut4.gif" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/Project Astronaut3.gif" width = "690" height = "388">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "selector_buttons">
+                        <li>
+                            <div class = "showcase3_button1"></div>
+                            <div class = "showcase3_button2"></div>
+                            <div class = "showcase3_button3"></div>
+                            <div class = "showcase3_button4"></div>
+                        </li>
+            
+                        
+                        <script>
+                        document.querySelector(".showcase3_button1").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase3_image").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase3_button1").style.background = "#AD8264"
+                        document.querySelector(".showcase3_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase3_button2").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase3_image").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase3_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button2").style.background = "#AD8264"
+                        document.querySelector(".showcase3_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase3_button3").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase3_image").style.transform = "translate(-200vw)"
+                        document.querySelector(".showcase3_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button3").style.background = "#AD8264"
+                        document.querySelector(".showcase3_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase3_button4").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase3_image").style.transform = "translate(-300vw)"
+                        document.querySelector(".showcase3_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase3_button4").style.background = "#AD8264"
+                        })
+                        </script>
+                    </div>
+                
+                    
+                    
+                    
+                    <style>
+                        .under_box_selector_buttons
+                        {
+                        margin-left : 50%;
+                        height : 360px;
+                        }
+                        
+                        .in_box_text
+                        {
+                        font-size : 16px;
+                        font : "Open Sans";
+                        text-align: center;
+                        color : #E0C9A8;
+                        margin-top : 32px;
+                        margin-left : -100%;
+                        margin-bottom : 32px;
+                        }
+                        
+                        .first_text_accent
+                        {
+                        font-size : 24px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        margin-right: -8px;
+                        }
+                        
+                        .text_accent
+                        {
+                        font-size : 17.5px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        }
+                        
+                    </style>
+                        
+                    <div class = "under_box_selector_buttons">
+                        <div class = "in_box_text">
+                            <!-- theme 1 -->
+                            <span class = "first_text_accent">
+                            특
+                            </span>
+                            
+                            <span>
+                            성화고에 진학하기 위해 2019년도에 제작한 포트폴리오용 게임이며,<br>생존 RPG 장르의 게임 입니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 2-->
+                            <span>
+                            게임의 목표는 여러가지 위험이 도사리는 다른 행성을 탐험하고 생존하는 것이며,<br>몬스터들을 잡거나, 지하 동굴을 탐험하거나, 행성 내에 이미 개척되어 개발된 지역을 방문하여<br>여러 NPC들에게 도움을 주거나, 받을 수 있고, 약탈 또한 가능합니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 3 -->
+                            <span>
+                            또한, <span class = "text_accent">멀티 플레이</span>를 통해, 친구와 함께 플레이 할 수 있습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 4 -->
+                            <span>
+                            통신 방식은 P2P방식을 채택했으며,<br>방 생성자와, 참가자로 구분되어 생성자의 아이피를 입력해서 접속하는 방식을 사용했습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 5 -->
+                            <span>
+                            아쉽게도, 특성화고 진학을 위해 제작하였고<br>심사 점수 중 포트폴리오에서의 점수만큼은 만점에 가까운 점수를 얻었지만,<br>다른 이유로 인해 진학하지 못하였습니다.
+                            </span>
+                            
+                        </div>
+                    </div>
+                    
+                    <style>
+                    .showcase3_code_button
+                    {
+                    cursor : pointer;
+                    background-color : #0C1019;
+                    color : white;
+                    width : 192px;
+                    height : 48px;
+                    margin-top : 256px;
+                    margin-bottom : 0px;
+                    margin-left : 45%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #2E465C;
+                    line-height : 44px;
+                    }
+                    
+                    .hyperlink
+                    {
+                    text-decoration : none;
+                    }
+                    
+                    </style>
+                    
+                    <li>
+                        <a class = "hyperlink" href = "https://github.com/ABER1047/Astronaut_remake">
+                        <div class = "showcase3_code_button">Source Code</div>
+                        </a>
+                    </li>
+                    
+                    <script>
+                    
+                    document.querySelector(".showcase3_code_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase3_code_button").style.background = "#2E465C"
+                    })
+                    
+                    document.querySelector(".showcase3_code_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase3_code_button").style.background = "#0C1019"
+                    })
+                    </script>
+                </div>
 
                 
-                .under_box_selector_buttons
-                {
-                background : #1B1B1B;
-                margin-left : 50%;
-                height : 1px;
-                }
                 
-                .showcase_images
-                {
-                margin-left : 32%;
-                }
                 
-                /* .case1:checked ~ .showcase_images
-                {
-                transform:translateX(0%)
-                }
                 
-                .case2:checked ~ .showcase_images
-                {
-                transform:translateX(30%)
-                }
                 
-                .case3:checked ~ .showcase_images
-                {
-                transform:translateX(60%)
-                } */
-            </style>
+                
+                
+                
+                
+                <div class = "showcase_4">
+                    <div class = "showcase_title">
+                        <h1 class = "showcase_title_sec">Growing box</h1>
+                        <h2 class = "showcase_title_sec_small">박스 키우기</h2>
+                    </div>
+                    
+                    <style>
+                    .showcase4_image
+                    {
+                    margin-left: 31.8%;
+                    width : 400vw;
+                    transition : transform 0.4s;
+                    }
+                    
+                    .showcase4_button1
+                    {
+                    cursor : pointer;
+                    background-color : #AD8264; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : 24px;
+                    margin-bottom : 0px;
+                    margin-left : 45.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase4_button2
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 48.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase4_button3
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 51.5%;
+                    transition : background 0.2s;
+                    }
+                    
+                    .showcase4_button4
+                    {
+                    cursor : pointer;
+                    background-color : #E0C9A8; 
+                    width : 12px;
+                    height : 12px;
+                    border-radius: 6px;
+                    margin-top : -12px;
+                    margin-bottom : 0px;
+                    margin-left : 54.5%;
+                    transition : background 0.2s;
+                    }
+                    </style>
+                    
+                    <div style = "overflow : hidden">
+                        <div class = "showcase4_image">
+                            <div class = "inner">
+                            <img src = "imgs/box1.PNG" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/box2.PNG" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/box3.PNG" width = "690" height = "388">
+                            </div>
+                            
+                            <div class = "inner">
+                            <img src = "imgs/box4.PNG" width = "690" height = "388">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class = "selector_buttons">
+                        <li>
+                            <div class = "showcase4_button1"></div>
+                            <div class = "showcase4_button2"></div>
+                            <div class = "showcase4_button3"></div>
+                            <div class = "showcase4_button4"></div>
+                        </li>
             
-            <div class = "select_menu_title">
-                <h1 class = "title_sec">Showcase</h1>
-                <h2 class = "title_sec_small">쇼케이스</h2>
-            </div>
-            
-            <div class = "showcase_images">
-                <li>
-                <img src = "imgs/test1.gif"></br>
+                        
+                        <script>
+                        document.querySelector(".showcase4_button1").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase4_image").style.transform = "translate(0vw)"
+                        document.querySelector(".showcase4_button1").style.background = "#AD8264"
+                        document.querySelector(".showcase4_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase4_button2").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase4_image").style.transform = "translate(-100vw)"
+                        document.querySelector(".showcase4_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button2").style.background = "#AD8264"
+                        document.querySelector(".showcase4_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase4_button3").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase4_image").style.transform = "translate(-200vw)"
+                        document.querySelector(".showcase4_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button3").style.background = "#AD8264"
+                        document.querySelector(".showcase4_button4").style.background = "#E0C9A8"
+                        })
+                        
+                        document.querySelector(".showcase4_button4").addEventListener("click",function()
+                        {
+                        document.querySelector(".showcase4_image").style.transform = "translate(-300vw)"
+                        document.querySelector(".showcase4_button1").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button2").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button3").style.background = "#E0C9A8"
+                        document.querySelector(".showcase4_button4").style.background = "#AD8264"
+                        })
+                        </script>
+                    </div>
                 
-                <img src = "imgs/test2.gif"></br>
-                
-                <img src = "imgs/test3.gif">
-                </li>
+                    
+                    
+                    
+                    <style>
+                        .under_box_selector_buttons
+                        {
+                        margin-left : 50%;
+                        height : 360px;
+                        }
+                        
+                        .in_box_text
+                        {
+                        font-size : 16px;
+                        font : "Open Sans";
+                        text-align: center;
+                        color : #E0C9A8;
+                        margin-top : 32px;
+                        margin-left : -100%;
+                        margin-bottom : 32px;
+                        }
+                        
+                        .first_text_accent
+                        {
+                        font-size : 24px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        margin-right: -8px;
+                        }
+                        
+                        .text_accent
+                        {
+                        font-size : 17.5px;
+                        font : "Open Sans";
+                        font-weight :bold;
+                        }
+                        
+                    </style>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    <div class = "under_box_selector_buttons">
+                        <div class = "in_box_text">
+                            <!-- theme 1 -->
+                            <span class = "first_text_accent">
+                            박
+                            </span>
+                            
+                            <span>
+                            스 키우기는 2018년과 2019년도 사이,<br>당시 초등학교 6학년 시절 <span class = "text_accent">처음</span>으로 제작한 모바일 게임이며,<br>방치형 클리커 장르의 게임 입니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 2-->
+                            <span>
+                            현재는 오랫동안 관리를 하지 않아서 삭제되었지만,<br>당시에 앱스토어에 업로드 하여, 약 <span class = "text_accent">10만 다운로드</span>이상의 다운로드 수 기록 및,<br>실시간 인기 게임 순위에 올라 갔었습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 3 -->
+                            <span>
+                            개발 이후, 첫 성공을 통해 여러 모바일 게임을 추가로 제작하였으며<br>이후 제작한 게임들은 각각 <span class = "text_accent">1만 다운로드</span>에서 <span class = "text_accent">10만 다운로드</span>수를 기록하기도 했습니다.<br><br><br><br>
+                            </span>
+                            
+                            <!-- theme 4 -->
+                            <span>
+                            다만, 마찬가지로 오랫동안 관리를 하지 않았던 탓에<br>대부분 앱스토어에서 삭제당하였습니다.
+                            </span>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <style>
+                    .showcase4_code_button
+                    {
+                    cursor : pointer;
+                    background-color : #0C1019;
+                    color : white;
+                    width : 192px;
+                    height : 48px;
+                    margin-top : 160px;
+                    margin-bottom : 0px;
+                    margin-left : 45%;
+                    font-size: 24px;
+                    transition : background 0.2s;
+                    font-weight : bold;
+                    text-align : center;
+                    border : 2px solid #2E465C;
+                    line-height : 44px;
+                    }
+                    
+                    .hyperlink
+                    {
+                    text-decoration : none;
+                    }
+                    
+                    </style>
+                    
+                    <li>
+                        <a class = "hyperlink" href = "https://github.com/ABER1047/Growing-box">
+                        <div class = "showcase4_code_button">Source Code</div>
+                        </a>
+                    </li>
+                    
+                    <script>
+                    
+                    document.querySelector(".showcase4_code_button").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".showcase4_code_button").style.background = "#2E465C"
+                    })
+                    
+                    document.querySelector(".showcase4_code_button").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".showcase4_code_button").style.background = "#0C1019"
+                    })
+                    </script>
+                </div>
             </div>
-            
-            <div class = "selector_buttons">
-                <li class = "button1"></li>
-                <li class = "button2"></li>
-                <li class = "button3"></li>
-                <!-- <li class = "button1">
-                <input type = "radio" name = "slider_button" id = "case1" checked>
-                </li>
-                
-                <li class = "button2">
-                <input type = "radio" name = "slider_button" id = "case2">
-                </li>
-                
-                <li class = "button3">
-                <input type = "radio" name = "slider_button" id = "case3">
-                </li> -->
-            </div>
-            
-            <div class = "under_box_selector_buttons">
-            </div>
-        </div>
-        
+         </div>
     </body>
 </html>
+            
