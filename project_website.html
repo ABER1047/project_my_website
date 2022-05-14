@@ -6,13 +6,24 @@
     <link href = "main.css" rel = "stylesheet">
 
     <body>
+        <script>
+        document.addEventListener("mousemove",function()
+        {
+        window.scroll(0,scrollY)
+        })
+        document.addEventListener("mousewheel",function()
+        {
+        window.scroll(0,scrollY)
+        })
+        </script>
+    
         <div class = "full_background">
             <div class = "first_theme_bg">
                 <style>
                     .full_background
                     {
                     background : #02050C;
-                    width : 101%;
+                    width : 102%;
                     margin-left: -8px;
                     }
                 </style>
@@ -113,7 +124,7 @@
                     {
                     margin-left : 0px;
                     position : absolute;
-                    width : 100%;
+                    width : 101%;
                     background : #02050C;
                     top : 860px;
                     height : 320px;
@@ -134,18 +145,11 @@
                         var scroll = $(window).scrollTop();
                             $('.trailer_bg').css(
                             {
-                            filter : "blur(" + (scroll*0.05) + "px)"
+                            filter : "blur(" + (scroll*0.05) + "px)",
+                            opacity : (1 - scroll*0.0015)
                             })
                         })
-                        
                     </script>
-                    
-                    <style>
-                    .trailer_bg
-                    {
-                    opacity : scroll;
-                    }
-                    </style>
                 </div>
                 
                 
@@ -186,7 +190,7 @@
                     padding : 64px;
                     margin : 32px;
                     margin-top : 1200px;
-                    margin-left: 0px;
+                    margin-left: 24px;
                     }
                     
                     .title_sec_small
@@ -198,7 +202,7 @@
                     padding : 64px;
                     margin : 32px;
                     margin-top : -160px;
-                    margin-left: 0px;
+                    margin-left: 24px;
                     margin-bottom : 64px;
                     height : 64px;
                     }
@@ -207,7 +211,7 @@
                     {
                     font-size : 48px;
                     font : "Open Sans";
-                    color : #E0C9A8;
+                    color : white;
                     text-align: center;
                     padding : 11px;
                     margin-top : 0px;
@@ -218,7 +222,7 @@
                     {
                     font-size : 24px;
                     font : "Open Sans";
-                    color : #AD8264;
+                    color : #E0C9A8;
                     text-align: left;
                     padding : 11px;
                     margin-top : -60px;
@@ -282,7 +286,7 @@
                     
                     .showcase1_image
                     {
-                    margin-left: 31.8%;
+                    margin-left: 32%;
                     width : 400vw;
                     transition : transform 0.4s;
                     }
@@ -310,7 +314,7 @@
                     border-radius: 6px;
                     margin-top : -128px;
                     margin-bottom : 0px;
-                    margin-left : 72px;
+                    margin-left : 90px;
                     transition : background 0.2s;
                     }
                     
@@ -323,7 +327,7 @@
                     border-radius: 6px;
                     margin-top : -12px;
                     margin-bottom : 0px;
-                    margin-left : 104px;
+                    margin-left : 120px;
                     transition : background 0.2s;
                     }
                     
@@ -336,7 +340,7 @@
                     border-radius: 6px;
                     margin-top : -12px;
                     margin-bottom : 0px;
-                    margin-left : 136px;
+                    margin-left : 150px;
                     transition : background 0.2s;
                     }
                     
@@ -349,7 +353,7 @@
                     border-radius: 6px;
                     margin-top : -12px;
                     margin-bottom : 0px;
-                    margin-left : 168px;
+                    margin-left : 180px;
                     transition : background 0.2s;
                     }
                     
@@ -541,7 +545,7 @@
                         font-size : 16px;
                         font : "Open Sans";
                         text-align: center;
-                        color : #E0C9A8;
+                        color : #AD8264;
                         margin-top : 32px;
                         margin-left : -100%;
                         margin-bottom : 32px;
@@ -686,7 +690,7 @@
                     <style>
                     .showcase2_image
                     {
-                    margin-left: 31.8%;
+                    margin-left: 32%;
                     width : 400vw;
                     transition : transform 0.4s;
                     }
@@ -815,40 +819,7 @@
                     
                     
                     
-                    <style>
-                        .under_box_selector_buttons
-                        {
-                        margin-left : 50%;
-                        height : 360px;
-                        }
-                        
-                        .in_box_text
-                        {
-                        font-size : 16px;
-                        font : "Open Sans";
-                        text-align: center;
-                        color : #E0C9A8;
-                        margin-top : 32px;
-                        margin-left : -100%;
-                        margin-bottom : 32px;
-                        }
-                        
-                        .first_text_accent
-                        {
-                        font-size : 24px;
-                        font : "Open Sans";
-                        font-weight :bold;
-                        margin-right: -8px;
-                        }
-                        
-                        .text_accent
-                        {
-                        font-size : 17.5px;
-                        font : "Open Sans";
-                        font-weight :bold;
-                        }
-                        
-                    </style>
+                    
                         
                     <div class = "under_box_selector_buttons">
                         <div class = "in_box_text">
@@ -980,7 +951,7 @@
                     <style>
                     .showcase3_image
                     {
-                    margin-left: 31.8%;
+                    margin-left: 32%;
                     width : 400vw;
                     transition : transform 0.4s;
                     }
@@ -1109,40 +1080,6 @@
                     
                     
                     
-                    <style>
-                        .under_box_selector_buttons
-                        {
-                        margin-left : 50%;
-                        height : 360px;
-                        }
-                        
-                        .in_box_text
-                        {
-                        font-size : 16px;
-                        font : "Open Sans";
-                        text-align: center;
-                        color : #E0C9A8;
-                        margin-top : 32px;
-                        margin-left : -100%;
-                        margin-bottom : 32px;
-                        }
-                        
-                        .first_text_accent
-                        {
-                        font-size : 24px;
-                        font : "Open Sans";
-                        font-weight :bold;
-                        margin-right: -8px;
-                        }
-                        
-                        .text_accent
-                        {
-                        font-size : 17.5px;
-                        font : "Open Sans";
-                        font-weight :bold;
-                        }
-                        
-                    </style>
                         
                     <div class = "under_box_selector_buttons">
                         <div class = "in_box_text">
@@ -1242,7 +1179,7 @@
                     <style>
                     .showcase4_image
                     {
-                    margin-left: 31.8%;
+                    margin-left: 32%;
                     width : 400vw;
                     transition : transform 0.4s;
                     }
@@ -1369,47 +1306,8 @@
                     </div>
                 
                     
-                    
-                    
-                    <style>
-                        .under_box_selector_buttons
-                        {
-                        margin-left : 50%;
-                        height : 360px;
-                        }
-                        
-                        .in_box_text
-                        {
-                        font-size : 16px;
-                        font : "Open Sans";
-                        text-align: center;
-                        color : #E0C9A8;
-                        margin-top : 32px;
-                        margin-left : -100%;
-                        margin-bottom : 32px;
-                        }
-                        
-                        .first_text_accent
-                        {
-                        font-size : 24px;
-                        font : "Open Sans";
-                        font-weight :bold;
-                        margin-right: -8px;
-                        }
-                        
-                        .text_accent
-                        {
-                        font-size : 17.5px;
-                        font : "Open Sans";
-                        font-weight :bold;
-                        }
-                        
-                    </style>
-                        
-                        
-                        
-                        
-                        
+
+   
                         
                         
                     <div class = "under_box_selector_buttons">
@@ -1490,6 +1388,102 @@
                     document.querySelector(".showcase4_code_button").addEventListener("mouseleave",function()
                     {
                     document.querySelector(".showcase4_code_button").style.background = "#0C1019"
+                    })
+                    </script>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class = "theme_selector">
+                    <style>
+                    .theme_selector_button1
+                    {
+                    background-color : #547282; 
+                    border : 2px solid #547282;
+                    margin-left : 77%;
+                    text-align : center;
+                    cursor : pointer;
+                    position : fixed;
+                    transition : background 0.2s;
+                    width : 60px;
+                    height : 36px;
+                    top : 32px;
+                    color : white;
+                    font-weight : bold;
+                    font-size : 16px;
+                    line-height : 34px;
+                    border-radius : 12px;
+                    }
+                    
+                    .theme_selector_button2
+                    {
+                    background-color : #ffffff00; 
+                    border : 2px solid #ffffff00;
+                    margin-left : 71%;
+                    text-align : center;
+                    cursor : pointer;
+                    position : fixed;
+                    transition : color 0.2s;
+                    width : 60px;
+                    height : 36px;
+                    top : 32px;
+                    color : white;
+                    font-weight : bold;
+                    font-size : 16px;
+                    line-height : 34px;
+                    border-radius : 12px;
+                    }
+                    </style>
+                    
+                    <div class = theme_selector_button1>
+                    Main
+                    </div>
+                    
+                    <div class = theme_selector_button2>
+                    Showcase
+                    </div>
+                    
+                    <script>
+                    document.querySelector(".theme_selector_button1").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".theme_selector_button1").style.background = "#446A83"
+                    document.querySelector(".theme_selector_button1").style.border = "2px solid #446A83"
+                    })
+                    
+                    document.querySelector(".theme_selector_button1").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".theme_selector_button1").style.background = "#547282"
+                    document.querySelector(".theme_selector_button1").style.border = "2px solid #547282"
+                    })
+                    
+                    document.querySelector(".theme_selector_button1").addEventListener("click",function()
+                    {
+                    window.scroll({top:0, behavior : "smooth"})
+                    })
+                    
+                    
+                    
+                    
+                    document.querySelector(".theme_selector_button2").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".theme_selector_button2").style.color = "#E7D2B5"
+                    })
+                    
+                    document.querySelector(".theme_selector_button2").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".theme_selector_button2").style.color = "white"
+                    })
+                    
+                    document.querySelector(".theme_selector_button2").addEventListener("click",function()
+                    {
+                    //720이 2번째 칸
+                    window.scroll({top:1900, behavior : "smooth"})
                     })
                     </script>
                 </div>
