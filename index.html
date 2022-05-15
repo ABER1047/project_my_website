@@ -3,7 +3,6 @@
     <head></head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width = divice-width, initial-scale = 1, minimum-scale = 1">
-    <link href = "main.css" rel = "stylesheet">
 
     <body>
         <script>
@@ -23,7 +22,7 @@
                     .full_background
                     {
                     background : #02050C;
-                    width : 102%;
+                    width : 1920;
                     margin-left: -8px;
                     }
                 </style>
@@ -35,9 +34,16 @@
                     {
                     margin-left: -8px;
                     margin-top: -32px;
-                    width : 101%;
+                    width : 1920;
+                    opacity : 1;
                     position : absolute;
                     transition : filter 0.1s;
+                    transition : opacity 0.1s;
+                    }
+                    
+                    .hyperlink
+                    {
+                    text-decoration : none;
                     }
                 
                     .title
@@ -46,7 +52,7 @@
                     display: block;
                     font-size : 162px;
                     font : "Bebas Neue";
-                    color : #E7D2B5;
+                    color : white;
                     text-align: left;
                     padding : 64px;
                     margin : 32px;
@@ -113,7 +119,7 @@
                     
                     .first_theme
                     {
-                    width : 101%;
+                    width : 1920;
                     background : #ffffff00;
                     height : 640px;
                     opacity : 1;
@@ -125,13 +131,14 @@
                     margin-left : 0px;
                     position : absolute;
                     background : #02050C;
-                    top : 860px;
+                    top : 400px;
+                    width : 1920;
                     height : 320px;
                     }
                 </style>
                 
                 <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
-                    <video autoplay muted loop playsinline control preload = "auto" width = "1920" height = "1050">
+                    <video autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
                     <source src = "imgs/page_trailer.mp4" type = "video/mp4">
                     </video>
                      
@@ -174,7 +181,7 @@
                 
                     .select_menu
                     {
-                    width : 101%;
+                    width : 1920;
                     margin-left : -16px;
                     background : #0C1019;
                     }
@@ -441,7 +448,7 @@
                     .under_box_bg
                     {
                     margin-bottom: -1350px;
-                    width : 101%;
+                    width : 1920;
                     height : 1350px;
                     background : #0C1019;
                     }
@@ -586,7 +593,7 @@
                             
                             <!-- theme 3-->
                             <span>
-                            테스터는 대략 <span class = "text_accent">90명</span>이 넘는 분들이 지원을 해주셨고,<br><br><span class = "text_accent">'난이도가 꽤나 어렵지만, 재미있었다'</span><br><br><span class = "text_accent">'RPG게임 답게 여러 스테이지 탐험과 각 보스들을 공략하는 맛이 있었다'</span><br><br>와 같은 평을 해주셨으며, 일부 테스터 분들은<br><br><span class = "text_accent">"조금 더 즐기고 싶은데 컨텐츠좀 더 추가 해주세요"</span><br><br>등등의 평을 남겨주셨습니다.
+                            테스터는 대략 <span class = "text_accent">90명</span>이 넘는 분들이 지원을 해주셨고,<br><br><span class = "text_accent">"난이도가 꽤나 어렵지만, 재미있었다"</span><br><br><span class = "text_accent">"RPG게임 답게 여러 스테이지 탐험과 각 보스들을 공략하는 맛이 있었다"</span><br><br>와 같은 평을 해주셨으며, 일부 테스터 분들은<br><br><span class = "text_accent">"재밌어서 더 하고 싶은데 컨텐츠 추가좀"</span><br><br>등등의 평을 남겨주셨습니다.
                             </span>
                            
                         </div>
@@ -633,11 +640,6 @@
                     text-align : center;
                     border : 2px solid #2E465C;
                     line-height : 44px;
-                    }
-                    
-                    .hyperlink
-                    {
-                    text-decoration : none;
                     }
                     
                     </style>
@@ -890,11 +892,7 @@
                     border : 2px solid #2E465C;
                     line-height : 44px;
                     }
-                    
-                    .hyperlink
-                    {
-                    text-decoration : none;
-                    }
+
                     
                     </style>
                     
@@ -1133,11 +1131,6 @@
                     line-height : 44px;
                     }
                     
-                    .hyperlink
-                    {
-                    text-decoration : none;
-                    }
-                    
                     </style>
                     
                     <li>
@@ -1363,11 +1356,7 @@
                     border : 2px solid #2E465C;
                     line-height : 44px;
                     }
-                    
-                    .hyperlink
-                    {
-                    text-decoration : none;
-                    }
+
                     
                     </style>
                     
@@ -1438,6 +1427,25 @@
                     line-height : 34px;
                     border-radius : 12px;
                     }
+                    
+                    .theme_selector_button3
+                    {
+                    background-color : #ffffff00; 
+                    border : 2px solid #ffffff00;
+                    margin-left : 66%;
+                    text-align : center;
+                    cursor : pointer;
+                    position : fixed;
+                    transition : color 0.2s;
+                    width : 60px;
+                    height : 36px;
+                    top : 32px;
+                    color : white;
+                    font-weight : bold;
+                    font-size : 16px;
+                    line-height : 34px;
+                    border-radius : 12px;
+                    }
                     </style>
                     
                     <div class = theme_selector_button1>
@@ -1446,6 +1454,10 @@
                     
                     <div class = theme_selector_button2>
                     Showcase
+                    </div>
+                    
+                    <div class = theme_selector_button3>
+                    Contact
                     </div>
                     
                     <script>
@@ -1484,7 +1496,84 @@
                     //720이 2번째 칸
                     window.scroll({top:1900, behavior : "smooth"})
                     })
+                    
+                    
+                    
+                    
+                    
+                    document.querySelector(".theme_selector_button3").addEventListener("mouseover",function()
+                    {
+                    document.querySelector(".theme_selector_button3").style.color = "#E7D2B5"
+                    })
+                    
+                    document.querySelector(".theme_selector_button3").addEventListener("mouseleave",function()
+                    {
+                    document.querySelector(".theme_selector_button3").style.color = "white"
+                    })
+                    
+                    document.querySelector(".theme_selector_button3").addEventListener("click",function()
+                    {
+                    //720이 2번째 칸
+                    window.scroll({top:3000, behavior : "smooth"})
+                    })
                     </script>
+                </div>
+                
+                
+                
+                
+                <div class = "contact_page">
+                    <style>
+                    .contact_page_box
+                    {
+                    background : #02050C;
+                    width : 1920;
+                    margin-left: -8px;
+                    height: 100px;
+                    margin-top: 196px;
+                    margin-bottom : -8px;
+                    }
+                    
+                    .github_icon
+                    {
+                    margin-top: -64px;
+                    margin-left : 75%;
+                    }
+                    
+                    .discord_icon
+                    {
+                    margin-top: -38px;
+                    margin-left : 71.8%;
+                    }
+                    
+                    .youtube_icon
+                    {
+                    margin-top: -34px;
+                    margin-left : 68.6%;
+                    }
+                    </style>
+                    
+                    
+                    <div class = "contact_page_box">
+                    </div>
+                    
+                    <div class = "github_icon">
+                        <a href = "https://github.com/ABER1047">
+                            <img src = "imgs/github_icon_white.png" href = "https://github.com/ABER1047" width = 32px height = 32px>
+                        </a>
+                    </div>
+                    
+                    <div class = "discord_icon">
+                        <a href = "https://discord.gg/hzbCTRemqq">
+                            <img src = "imgs/discord_icon_white.png" width = 36px height = 36px>
+                        </a>
+                    </div>
+                    
+                    <div class = "youtube_icon">
+                        <a href = "https://www.youtube.com/channel/UCuBkudnNQFlTt6QQ-9Nhdtw/videos">
+                            <img src = "imgs/youtube_icon_white.png" width = 36px height = 25px>
+                        </a>
+                    </div>
                 </div>
             </div>
          </div>
