@@ -11,7 +11,7 @@
                     .full_background
                     {
                     background : #02050C;
-                    width : 1920;
+                    width : var(--window_width);
                     margin-left: -8px;
                     }
                 </style>
@@ -23,7 +23,7 @@
                     {
                     margin-left : var(--trailer_bg_margin_left);
                     margin-top : -32px;
-                    width : 1920;
+                    width : var(--window_width);
                     opacity : 1;
                     position : absolute;
                     transition : filter 0.1s;
@@ -105,20 +105,13 @@
                     
                     .first_theme
                     {
-                    width : 1920;
+                    width : var(--window_width);
                     background : #ffffff00;
+                    margin-left: 0px;
+                    margin-right: 0px;
                     height : 640px;
                     opacity : 1;
                     transition : filter 0.5s;
-                    }
-                    
-                    .trailer_bg_box
-                    {
-                    position : absolute;
-                    background : #02050C;
-                    top : 400px;
-                    width : 1920;
-                    height : 320px;
                     }
                 </style>
 
@@ -143,9 +136,6 @@
                     </script>
                 </div>
                 
-                
-                <div class = "trailer_bg_box"></div>
-                
             
                 <div class = "info_f">
                 <h1 class = "title">Hello!</h1>
@@ -166,14 +156,14 @@
                 
                     .select_menu
                     {
-                    width : 1920;
-                    margin-left : -16px;
+                    width : var(--window_width);
+                    margin-left: 0px;
+                    margin-right: 0px;
                     background : #0C1019;
                     }
                     
                     .title_sec
                     {
-                    background : #0C1019;
                     font-size : 64px;
                     font : "Open Sans";
                     color : #E0C9A8;
@@ -232,7 +222,6 @@
                     text-align: center;
                     padding : 11px;
                     margin-top : 0px;
-                    margin-left: 0px;
                     }
                     
                     .showcase_title_sec_small
@@ -304,7 +293,7 @@
                     .showcase1_image
                     {
                     text-align : center;
-                    margin-left : 12px;
+                    margin-left : -8px;
                     display : block;
                     width : 400vw;
                     transition : transform 0.4s;
@@ -314,6 +303,11 @@
                     {
                     width : 100vw;
                     float : left;
+                    }
+                    
+                    .mobile_mode_margin
+                    {
+                    margin-bottom : var(--showcase_title_margin);
                     }
                 
                 </style>
@@ -401,6 +395,7 @@
                         <div class = "showcase_theme_button2"></div>
                         <div class = "showcase_theme_button3"></div>
                         <div class = "showcase_theme_button4"></div>
+                        <div class = "mobile_mode_margin"></div>
                         
                         <script>
                         document.querySelector(".showcase_theme_button1").addEventListener("click",function()
@@ -461,8 +456,10 @@
                     .under_box_bg
                     {
                     margin-bottom: -1350px;
-                    width : 1920;
+                    width : var(--window_width);
                     height : 1350px;
+                    margin-left: 0px;
+                    margin-right: 0px;
                     background : #0C1019;
                     }
                     </style>
@@ -1562,8 +1559,9 @@
                 .contact_page_box
                 {
                 background : #02050C;
-                width : 1920;
-                margin-left: -8px;
+                width : var(--window_width);
+                margin-left: 0px;
+                margin-right: 0px;
                 height: 100px;
                 margin-top: 380px;
                 margin-bottom : -8px;
@@ -1573,7 +1571,7 @@
                 {
                 position : absolute;
                 margin-top: -64px;
-                margin-left : 75%;
+                margin-left : var(--contact_button1_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
                 }
@@ -1582,7 +1580,7 @@
                 {
                 position : absolute;
                 margin-top: -65px;
-                margin-left : 71.8%;
+                margin-left : var(--contact_button2_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
                 }
@@ -1591,7 +1589,7 @@
                 {
                 position : absolute;
                 margin-top: -58px;
-                margin-left : 68.6%;
+                margin-left : var(--contact_button3_pos);
                 filter : brightness(0.7);
                 transition : filter 0.2s;
                 }
@@ -1668,6 +1666,12 @@
         --theme_selector2_pos : 71%;
         --theme_selector3_pos : 66%;
         --theme_selector4_pos : 58.5%;
+        --showcase_title_margin : 0px;
+        --contact_page_margin : 380px;
+        --contact_button1_pos : 75%;
+        --contact_button2_pos : 71.8%;
+        --contact_button3_pos : 68.6%;
+        --window_width : 100%;
         }
         </style>
          
@@ -1697,38 +1701,54 @@
             if (c_w < 975)
             {
             document.documentElement.style.setProperty("--margin_title","-32px")
-            
             document.documentElement.style.setProperty("--margin_desc","32px")
             
             
-            //document.documentElement.style.setProperty("--theme_selector4_pos","18.5%")
-            
             document.documentElement.style.setProperty("--theme_selector3_pos","32%")
-            
             document.documentElement.style.setProperty("--theme_selector2_pos","46%")
-            
             document.documentElement.style.setProperty("--theme_selector1_pos","62%")
+            
+            
+            
+            document.documentElement.style.setProperty("--showcase_title_margin","128px")
+            document.documentElement.style.setProperty("--contact_page_margin","380px")
+            
+            
+            
+            document.documentElement.style.setProperty("--contact_button1_pos","37.5%")
+            document.documentElement.style.setProperty("--contact_button2_pos","47.5%")
+            document.documentElement.style.setProperty("--contact_button3_pos","57.5%")
             }
             else
             {
             document.documentElement.style.setProperty("--margin_title","32px")
-            
             document.documentElement.style.setProperty("--margin_desc","96px")
             
             
+            
             document.documentElement.style.setProperty("--theme_selector1_pos","77%")
-            
             document.documentElement.style.setProperty("--theme_selector2_pos","71%")
-            
             document.documentElement.style.setProperty("--theme_selector3_pos","66%")
-            
             document.documentElement.style.setProperty("--theme_selector4_pos","58.5%")
+            
+            
+            
+            document.documentElement.style.setProperty("--showcase_title_margin","0px")
+            document.documentElement.style.setProperty("--contact_page_margin","380px")
+            
+            
+            
+            document.documentElement.style.setProperty("--contact_button1_pos","75%")
+            document.documentElement.style.setProperty("--contact_button2_pos","71.8%")
+            document.documentElement.style.setProperty("--contact_button3_pos","68.6%")
             }
 
 
         var cal_trailer_bg_xpos = (-8-(1920-c_w)*0.5)+"px"
         document.documentElement.style.setProperty("--trailer_bg_margin_left",cal_trailer_bg_xpos)
+        document.documentElement.style.setProperty("--window_width",(c_w-17)+"px")
         console.log(cal_trailer_bg_xpos)
+        console.log((c_w-8)+"px")
 
         reset_scroll_xpos()
         }
