@@ -1722,6 +1722,7 @@
         --margin_top_desc : 48px;
         --text_270px : 270px;
         --text_100px : 100px;
+        --text_485px : 485px;
         }
         </style>
          
@@ -1850,6 +1851,7 @@
         document.documentElement.style.setProperty("--text_10px",12*size_scale_for+"px")
         document.documentElement.style.setProperty("--text_270px",270*size_scale_fif+"px")
         document.documentElement.style.setProperty("--text_100px",100*size_scale_thi+"px")
+        document.documentElement.style.setProperty("--text_485px",270*size_scale_for+"px")
             
 
 
@@ -1871,8 +1873,8 @@
     </body>
     
     
-    <body>
     <!-- Loading bar -->
+    <body>
         <style>
         .loading_bar_bg
         {
@@ -1893,12 +1895,12 @@
         margin-left : -8px;
         width : 1920px;
         height : 2px;
-        top : 485px;
+        top : var(--text_485px);
         }
         
         .loading_bar
         {
-        top : 485px;
+        top : var(--text_485px);
         position : fixed;
         width : 0px;
         height : 2px;
