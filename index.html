@@ -112,7 +112,7 @@
 
                 <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
                     <video autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
-                    <source src = "imgs/page_trailer.mp4" type = "video/mp4" loading = "eager" preload = "auto">
+                    <source id = "trailer_video" src = "imgs/page_trailer.mp4" type = "video/mp4" loading = "eager" preload = "auto">
                     </video>
                      
                     <script src = "https://code.jquery.com/jquery-3.3.1.js">
@@ -133,10 +133,10 @@
                 
             
                 <div class = "info_f">
-                <h1 class = "title">Hello!</h1>
-                <h2 class = "title_small1">안녕하세요!</h2>
-                <h2 class = "title_small2">こんにちは!</h2>
-                <p class = "desc_first">해당 사이트는 포트폴리오 용도로 제작되었으며,<br>해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
+                <h1 class = "title" style = "transition : opacity 0.8s; opacity : 0">Hello!</h1>
+                <h2 class = "title_small1" style = "transition : opacity 0.8s; opacity : 0">안녕하세요!</h2>
+                <h2 class = "title_small2" style = "transition : opacity 0.8s; opacity : 0">こんにちは!</h2>
+                <p class = "desc_first" style = "transition : opacity 0.8s; opacity : 0">해당 사이트는 포트폴리오 용도로 제작되었으며,<br>해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
                 </div>
             </div>
             
@@ -1919,6 +1919,11 @@
         setTimeout(show_page,4500)
         }
         
+        if (document.getElementById("trailer_video").readyState === "complete")
+        {
+        setTimeout(show_page,1)
+        }
+        
         window.onload = function()
         {
         loading_now()
@@ -1963,6 +1968,43 @@
         document.getElementById("loading_bar_bg").style.height = 0;
         document.getElementById("loading_bar").style.height = 0;
         document.getElementById("loading_bar_grad").style.height = 0;
+        title1_anime()
+        setTimeout(title2_anime,200)
+        setTimeout(title3_anime,400)
+        setTimeout(title_desc_anime,1300)
+        }
+        
+        
+        function title1_anime()
+        {
+            $('.title').css(
+            {
+            opacity : 1
+            })
+        }
+        
+        function title2_anime()
+        {
+            $('.title_small1').css(
+            {
+            opacity : 1
+            })
+        }
+        
+        function title3_anime()
+        {
+            $('.title_small2').css(
+            {
+            opacity : 1
+            })
+        }
+        
+        function title_desc_anime()
+        {
+            $('.desc_first').css(
+            {
+            opacity : 1
+            })
         }
         
 
