@@ -4,11 +4,12 @@
     <meta charset = "utf-8">
     <meta name = "viewport" content = "initial-scale = 1, minimum-scale = 1">
 
-    <body>
+    <body id = "body_t" class = "body_t">
         <style>
-        body
+        .body_t
         {
         overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: hidden;
         }
         </style>
     
@@ -1867,6 +1868,84 @@
         reset_pos_by_win()
         })
         </script>
+    </body>
+    
+    
+    <body>
+    <!-- Loading bar -->
+        <style>
+        .loading_bar_bg
+        {
+        position : fixed;
+        width : 1920px;
+        height : 1080px;
+        top : 0px;
+        margin-left : -8px;
+        /* background-image: linear-gradient(#192731, #02050C); */
+        background : #02050C;
+        transition : width 4.5s, opacity 1s;
+        }
+        
+        .loading_bar_grad
+        {
+        position : fixed;
+        background-image: linear-gradient(to right,#bdbdbd,#466074,#263b4b,#192731,#547282,#b2d7eb,#547282,#192731);
+        margin-left : -8px;
+        width : 1920px;
+        height : 2px;
+        top : 485px;
+        }
+        
+        .loading_bar
+        {
+        top : 485px;
+        position : fixed;
+        width : 0px;
+        height : 2px;
+        margin-left : -8px;
+        background : #02050C;
+        transition : width 4.5s;
+        }
+        </style>
+
+        <script>
+        window.onload = function()
+        {
+        loading_bar.style.width = "1920px";
+        setTimeout(show_page,4500)
+        }
+        
+
+        function show_page()
+        {
+        window.scroll({top:0})
+        document.getElementById("body_t").style.overflowY = "scroll";
+
+            $('.loading_bar_bg').css(
+            {
+            opacity : 0
+            })
+            
+            $('.loading_bar').css(
+            {
+            opacity : 0
+            })
+            
+            $('.loading_bar_grad').css(
+            {
+            opacity : 0
+            })
+            
+        console.log("page_loaded");
+        }
+        
+
+        </script>
+        
+        
+        <div id = "loading_bar_bg" class = "loading_bar_bg"></div>
+        <div id = "loading_bar_grad" class = "loading_bar_grad"></div>
+        <div id = "loading_bar" class = "loading_bar"></div>
     </body>
 </html>
             
