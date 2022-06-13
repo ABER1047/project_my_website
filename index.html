@@ -1909,15 +1909,30 @@
         </style>
 
         <script>
-        window.onload = function()
+        var loaded_page = false;
+        
+        function loading_now()
         {
-        loading_bar.style.width = "1920px";
+        loading_bar.style.width = window.innerWidth+"px";
         setTimeout(show_page,4500)
         }
         
+        window.onload = function()
+        {
+        loading_now()
+        }
+        
+        $(window).resize(function()
+        {
+            if (!loaded_page)
+            {
+            loading_now()
+            }
+        })
 
         function show_page()
         {
+        loaded_page = true;
         window.scroll({top:0})
         document.getElementById("body_t").style.overflowY = "scroll";
 
