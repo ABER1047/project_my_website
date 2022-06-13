@@ -111,8 +111,8 @@
                 </style>
 
                 <div class = "trailer_bg" style="opacity : 1; filter : blur(0px);">
-                    <video autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
-                    <source id = "trailer_video" src = "imgs/page_trailer.mp4" type = "video/mp4" loading = "eager" preload = "auto">
+                    <video id = "trailer_video" autoplay muted loop playsinline control preload = "auto" width = "1910" height = "1050">
+                    <source src = "imgs/page_trailer.mp4" type = "video/mp4" loading = "eager" preload = "auto">
                     </video>
                      
                     <script src = "https://code.jquery.com/jquery-3.3.1.js">
@@ -122,21 +122,32 @@
                         $(window).scroll(function()
                         {
                         var scroll = $(window).scrollTop();
-                            $('.trailer_bg').css(
+                            if (scroll > 64)
                             {
-                            filter : "blur(" + (scroll*0.05) + "px)",
-                            opacity : (1 - scroll*0.0015)
-                            })
+                                $('.trailer_bg').css(
+                                {
+                                filter : "blur(" + (scroll*0.05) + "px)",
+                                opacity : (1 - scroll*0.0015)
+                                })
+                            }
+                            else
+                            {
+                                $('.trailer_bg').css(
+                                {
+                                filter : "blur(0px)",
+                                opacity : 1
+                                })
+                            }
                         })
                     </script>
                 </div>
                 
             
                 <div class = "info_f">
-                <h1 class = "title" style = "transition : opacity 0.8s; opacity : 0">Hello!</h1>
-                <h2 class = "title_small1" style = "transition : opacity 0.8s; opacity : 0">안녕하세요!</h2>
-                <h2 class = "title_small2" style = "transition : opacity 0.8s; opacity : 0">こんにちは!</h2>
-                <p class = "desc_first" style = "transition : opacity 0.8s; opacity : 0">해당 사이트는 포트폴리오 용도로 제작되었으며,<br>해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
+                <h1 id = "title" class = "title" style = "transition : opacity 0.8s; opacity : 0">Hello!</h1>
+                <h2 id = "title_small1" class = "title_small1" style = "transition : opacity 0.8s; opacity : 0">안녕하세요!</h2>
+                <h2 id = "title_small2" class = "title_small2" style = "transition : opacity 0.8s; opacity : 0">こんにちは!</h2>
+                <p id = "desc_first" class = "desc_first" style = "transition : opacity 0.8s; opacity : 0">해당 사이트는 포트폴리오 용도로 제작되었으며,<br>해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
                 </div>
             </div>
             
@@ -1919,22 +1930,24 @@
         setTimeout(show_page,4500)
         }
         
-        if (document.getElementById("trailer_video").readyState === 4)
+        var video_ele = document.getElementById("trailer_video")
+        video_ele.onloadeddata = function()
         {
-        console.log("loaded_video")
-        setTimeout(show_page,1)
+        console.log("loaded_video");
+        document.getElementById("loading_bar").style.transition = "width 1s";
+        setTimeout(show_page,1000);
         }
         
         window.onload = function()
         {
-        loading_now()
+        loading_now();
         }
         
         $(window).resize(function()
         {
             if (!loaded_page)
             {
-            loading_now()
+            loading_now();
             }
         })
 
@@ -1943,22 +1956,11 @@
         document.getElementById("body_t").style.overflowY = "scroll";
         setTimeout(set_height,1000)
         loaded_page = true;
-        window.scroll({top:0})
-
-            $('.loading_bar_bg').css(
-            {
-            opacity : 0
-            })
-            
-            $('.loading_bar').css(
-            {
-            opacity : 0
-            })
-            
-            $('.loading_bar_grad').css(
-            {
-            opacity : 0
-            })
+        window.scroll({top:0, behavior : "smooth"})
+        
+        document.getElementById("loading_bar_bg").style.opacity = 0;
+        document.getElementById("loading_bar").style.opacity = 0;
+        document.getElementById("loading_bar_grad").style.opacity = 0;
             
         console.log("page_loaded");
         }
@@ -1978,34 +1980,22 @@
         
         function title1_anime()
         {
-            $('.title').css(
-            {
-            opacity : 1
-            })
+        document.getElementById("title").style.opacity = 1;
         }
         
         function title2_anime()
         {
-            $('.title_small1').css(
-            {
-            opacity : 1
-            })
+        document.getElementById("title_small1").style.opacity = 1;
         }
         
         function title3_anime()
         {
-            $('.title_small2').css(
-            {
-            opacity : 1
-            })
+        document.getElementById("title_small2").style.opacity = 1;
         }
         
         function title_desc_anime()
         {
-            $('.desc_first').css(
-            {
-            opacity : 1
-            })
+        document.getElementById("desc_first").style.opacity = 1;
         }
         
 
