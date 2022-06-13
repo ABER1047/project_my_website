@@ -1919,8 +1919,9 @@
         setTimeout(show_page,4500)
         }
         
-        if (document.readyState === "complete")
+        if (document.getElementById("trailer_video").readyState === 4)
         {
+        console.log("loaded_video")
         setTimeout(show_page,1)
         }
         
