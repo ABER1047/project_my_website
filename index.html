@@ -1932,9 +1932,10 @@
 
         function show_page()
         {
+        document.getElementById("body_t").style.overflowY = "scroll";
+        setTimeout(set_height,1000)
         loaded_page = true;
         window.scroll({top:0})
-        document.getElementById("body_t").style.overflowY = "scroll";
 
             $('.loading_bar_bg').css(
             {
@@ -1952,6 +1953,14 @@
             })
             
         console.log("page_loaded");
+        }
+        
+        
+        function set_height()
+        {
+        document.getElementById("loading_bar_bg").style.height = 0;
+        document.getElementById("loading_bar").style.height = 0;
+        document.getElementById("loading_bar_grad").style.height = 0;
         }
         
 
