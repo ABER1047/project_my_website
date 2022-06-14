@@ -51,6 +51,7 @@
                     margin-left : var(--margin_title);
                     margin-bottom : -96px;
                     margin-top : var(--text_margin_top_s);
+                    top : 32px;
                     }
                     
                     .title_small1
@@ -66,7 +67,7 @@
                     margin-left: var(--margin_title);
                     margin-top : var(--title_s1_margin);
                     margin-bottom : 64px;
-                    top : 260px;
+                    top : 292px;
                     }
                     
                     .title_small2
@@ -82,7 +83,7 @@
                     margin-left: var(--margin_title);
                     margin-top : var(--title_s2_margin);
                     margin-bottom : 64px;
-                    top : 330px;
+                    top : 362px;
                     }
                     
                     .desc_first
@@ -95,7 +96,7 @@
                     padding : 11px;
                     margin-top : var(--margin_top_desc);
                     margin-left: var(--margin_desc);
-                    top : 450px;
+                    top : 482px;
                     }
                     
                     .first_theme
@@ -144,15 +145,15 @@
                 
             
                 <div class = "info_f">
-                <h1 id = "title" class = "title" style = "transition : opacity 0.8s; opacity : 0">Hello!</h1>
-                <h2 id = "title_small1" class = "title_small1" style = "transition : opacity 0.8s; opacity : 0">안녕하세요!</h2>
-                <h2 id = "title_small2" class = "title_small2" style = "transition : opacity 0.8s; opacity : 0">こんにちは!</h2>
-                <p id = "desc_first" class = "desc_first" style = "transition : opacity 0.8s; opacity : 0">해당 사이트는 포트폴리오 용도로 제작되었으며,<br>해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
+                <h1 id = "title" class = "title" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Hello!</h1>
+                <h2 id = "title_small1" class = "title_small1" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">안녕하세요!</h2>
+                <h2 id = "title_small2" class = "title_small2" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">こんにちは!</h2>
+                <p id = "desc_first" class = "desc_first" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">해당 사이트는 포트폴리오 용도로 제작되었으며,<br>해당 사이트를 포함한, 전시된 모든 프로젝트들은 전부 본인이 개발한 것임을 밝힙니다.</p>
                 </div>
             </div>
             
             
-            <div class = "select_menu">
+            <div id = "select_menu" class = "select_menu" style = "transition : width 0.8s">
                 <style>
                     li
                     {
@@ -161,10 +162,12 @@
                 
                     .select_menu
                     {
-                    width : var(--window_width);
+                    width : 0px;
                     margin-left: 0px;
                     margin-right: 0px;
                     background : #0C1019;
+                    height : 1600px;
+                    margin-bottom : -400px;
                     }
                     
                     .title_sec
@@ -329,8 +332,8 @@
                 </style>
                 
                 <div class = "select_menu_title">
-                    <h1 class = "title_sec">Showcase</h1>
-                    <h2 class = "title_sec_small">쇼케이스</h2>
+                    <h1 id = "title_sec" class = "title_sec" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Showcase</h1>
+                    <h2 id = "title_sec_small" class = "title_sec_small" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">쇼케이스</h2>
                 </div>
                 
                 <style>
@@ -405,7 +408,7 @@
                     }
                 </style>
                 
-                <div class = "theme_selector_buttons">
+                <div id = "theme_selector_buttons" class = "theme_selector_buttons" style = "transition : opacity 0.8s; opacity : 0">
                     <li>
                         <div class = "showcase_theme_button1"></div>
                         <div class = "showcase_theme_button2"></div>
@@ -437,6 +440,9 @@
                         document.querySelector(".showcase_theme_button2").style.background = "#AD8264"
                         document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
                         document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+                        
+                        //쇼케이스 2번 애니메이션 실행
+                        setTimeout(showcase2_text1_anime,1000)
                         })
                         
                         document.querySelector(".showcase_theme_button3").addEventListener("click",function()
@@ -450,6 +456,9 @@
                         document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
                         document.querySelector(".showcase_theme_button3").style.background = "#AD8264"
                         document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+                        
+                        //쇼케이스 3번 애니메이션 실행
+                        setTimeout(showcase3_text1_anime,1000)
                         })
                         
                         document.querySelector(".showcase_theme_button4").addEventListener("click",function()
@@ -463,6 +472,9 @@
                         document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
                         document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
                         document.querySelector(".showcase_theme_button4").style.background = "#AD8264"
+                        
+                        //쇼케이스 4번 애니메이션 실행
+                        setTimeout(showcase4_text1_anime,1000)
                         })
                         </script>
                     </li>
@@ -472,7 +484,7 @@
                     .under_box_bg
                     {
                     margin-bottom: -1350px;
-                    width : var(--window_width);
+                    width : 0px;
                     height : 1350px;
                     margin-left: 0px;
                     margin-right: 0px;
@@ -488,13 +500,13 @@
                     
                 <div class = "showcase_1">
                     <div class = "showcase_title">
-                        <h1 class = "showcase_title_sec">Project Wak</h1>
-                        <h2 class = "showcase_title_sec_small">프로젝트 왁</h2>
+                        <h1 id = "showcase1_title_sec" class = "showcase_title_sec" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Project Wak</h1>
+                        <h2 id = "showcase1_title_sec_small" class = "showcase_title_sec_small" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">프로젝트 왁</h2>
                     </div>
             
                     
                     <div style = "overflow : hidden">
-                        <div class = "showcase1_image">
+                        <div id = "showcase1_image" class = "showcase1_image" style = "transition : opacity 0.8s; opacity : 0">
                             <div class = "inner">
                             <img class = "showcase_real_img" src = "imgs/test1.gif" loading = "lazy">
                             </div>
@@ -513,7 +525,7 @@
                         </div>
                     </div>
                     
-                    <div class = "selector_buttons">
+                    <div id = "selector_buttons1" class = "selector_buttons" style = "transition : opacity 0.8s; opacity : 0">
                         <li>
                             <div class = "showcase1_button1"></div>
                             <div class = "showcase1_button2"></div>
@@ -581,7 +593,9 @@
                         margin-top : 32px;
                         margin-left : -100%;
                         margin-bottom : 32px;
+                        height : 770px;
                         text-align : center;
+                        width : 0px;
                         }
                         
                         .first_text_accent
@@ -602,8 +616,8 @@
                         }
                     </style>
                         
-                    <div class = "under_box_selector_buttons">
-                        <div class = "in_box_text">
+                    <div id = "under_box_selector_buttons" class = "under_box_selector_buttons">
+                        <div id = "in_box_text1" class = "in_box_text" style = "transition : width 0.8s, opacity 0.8s; opacity : 0">
                             <!-- theme 1 -->
                             <span class = "first_text_accent">
                             프
@@ -620,7 +634,7 @@
                             
                             <!-- theme 3-->
                             <span>
-                            테스터는 대략 <span class = "text_accent">90명</span>이 넘는 분들이 지원을 해주셨고,<br><br><span class = "text_accent">"난이도가 꽤나 어렵지만, 재미있었다"</span><br><br><span class = "text_accent">"RPG게임 답게 여러 스테이지 탐험과 각 보스들을 공략하는 맛이 있었다"</span><br><br><span class = "text_accent">"재밌어서 더 하고 싶은데 컨텐츠 추가좀"</span><br><br>등등의 평을 남겨주셨습니다.<br><br><br><br>
+                            테스터는 대략 <span class = "text_accent">90명</span>이 넘는 분들이 지원을 해주셨고,<br><br><span class = "text_accent">"난이도가 꽤나 어렵지만, 재미있었다"</span><br><br><span class = "text_accent">"RPG게임 답게 여러 스테이지 탐험과 각 보스들을 공략하는 맛이 있었다"</span><br><br><span class = "text_accent">"재밌어서 더 하고 싶은데 컨텐츠 추가좀"</span><br><br>등등의 평을 남겨주셨습니다.<br><br><br><br><br><br><br><br><br><br><br><br>
                             </span>
                            
                         </div>
@@ -679,11 +693,11 @@
                     </style>
                     
                     <li>
-                        <a class = "showcase1_trailer_button" href = "https://youtu.be/UB72TRMkehI">
+                        <a id = "showcase1_trailer_button" class = "showcase1_trailer_button" href = "https://youtu.be/UB72TRMkehI" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Watch Trailer
                         </a>
                         
-                        <a class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak">
+                        <a id = "showcase1_code_button" class = "showcase1_code_button" href = "https://github.com/ABER1047/Project-wak" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Source Code
                         </a>
                     </li>
@@ -719,8 +733,8 @@
                 <div class = "showcase_2">
                     <div class = "showcase_title">
                         <div class = "mobile_mode_margin2"></div>
-                        <h1 class = "showcase_title_sec">Arena of Wakgood</h1>
-                        <h2 class = "showcase_title_sec_small">아레나 오브 왁굳</h2>
+                        <h1 id = "showcase2_title_sec" class = "showcase_title_sec" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Arena of Wakgood</h1>
+                        <h2 id = "showcase2_title_sec_small" class = "showcase_title_sec_small" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">아레나 오브 왁굳</h2>
                     </div>
                     
                     <style>
@@ -787,7 +801,7 @@
                     </style>
                     
                     <div style = "overflow : hidden">
-                        <div class = "showcase2_image">
+                        <div id = "showcase2_image" class = "showcase2_image" style = "transition : opacity 0.8s; opacity : 0">
                             <div class = "inner">
                             <img class = "showcase_real_img" src = "imgs/arena_wak1.gif" width = "690" height = "388" loading = "lazy">
                             </div>
@@ -806,7 +820,7 @@
                         </div>
                     </div>
                     
-                    <div class = "selector_buttons">
+                    <div id = "selector_buttons2" class = "selector_buttons" style = "transition : opacity 0.8s; opacity : 0">
                         <li>
                             <div class = "showcase2_button1"></div>
                             <div class = "showcase2_button2"></div>
@@ -860,7 +874,7 @@
                     
                         
                     <div class = "under_box_selector_buttons">
-                        <div class = "in_box_text">
+                        <div id = "in_box_text2" class = "in_box_text" style = "transition : width 0.8s, opacity 0.8s; opacity : 0">
                             <!-- theme 1 -->
                             <span class = "first_text_accent">
                             아
@@ -887,7 +901,7 @@
                             
                             <!-- theme 5 -->
                             <span>
-                            첫 출시 당시, 예상보다 <span class = "text_accent">많은 접속자</span>(대략 100~150명 정도)로 인해 서버가 마비됨으로 써,<br><span class = "text_accent">우왁굳</span>님의 방송에선 진행 할 수 없게 되었습니다.<br><br><br><br><br><br>
+                            첫 출시 당시, 예상보다 <span class = "text_accent">많은 접속자</span>(대략 100~150명 정도)로 인해 서버가 마비됨으로 써,<br><span class = "text_accent">우왁굳</span>님의 방송에선 진행 할 수 없게 되었습니다.<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                             </span>
                             
                         </div>
@@ -939,11 +953,11 @@
                     </style>
 
                     <li>
-                        <a class = "showcase2_trailer_button" href = "https://youtu.be/dbzp09Ly1CY">
+                        <a id = "showcase2_trailer_button" class = "showcase2_trailer_button" href = "https://youtu.be/dbzp09Ly1CY" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Watch Trailer
                         </a>
                         
-                        <a class = "showcase2_code_button" href = "https://github.com/ABER1047/Arena-of-woowakgood">
+                        <a id = "showcase2_code_button" class = "showcase2_code_button" href = "https://github.com/ABER1047/Arena-of-woowakgood" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Source Code
                         </a>
                     </li>
@@ -983,8 +997,8 @@
                 <div class = "showcase_3">
                     <div class = "showcase_title">
                         <div class = "mobile_mode_margin2"></div>
-                        <h1 class = "showcase_title_sec">Astronuat</h1>
-                        <h2 class = "showcase_title_sec_small">아스트로넛</h2>
+                        <h1 id = "showcase3_title_sec" class = "showcase_title_sec" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Astronuat</h1>
+                        <h2 id = "showcase3_title_sec_small" class = "showcase_title_sec_small" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">아스트로넛</h2>
                     </div>
                     
                     <style>
@@ -1051,7 +1065,7 @@
                     </style>
                     
                     <div style = "overflow : hidden">
-                        <div class = "showcase3_image">
+                        <div id = "showcase3_image" class = "showcase3_image" style = "transition : opacity 0.8s; opacity : 0">
                             <div class = "inner">
                             <img class = "showcase_real_img" src = "imgs/Project Astronaut1.gif" width = "690" height = "388" loading = "lazy">
                             </div>
@@ -1070,7 +1084,7 @@
                         </div>
                     </div>
                     
-                    <div class = "selector_buttons">
+                    <div id = "selector_buttons3" class = "selector_buttons" style = "transition : opacity 0.8s; opacity : 0">
                         <li>
                             <div class = "showcase3_button1"></div>
                             <div class = "showcase3_button2"></div>
@@ -1123,7 +1137,7 @@
                     
                         
                     <div class = "under_box_selector_buttons">
-                        <div class = "in_box_text">
+                        <div id = "in_box_text3" class = "in_box_text" style = "transition : width 0.8s, opacity 0.8s; opacity : 0">
                             <!-- theme 1 -->
                             <span class = "first_text_accent">
                             특
@@ -1181,7 +1195,7 @@
                     </style>
                     
                     <li>
-                        <a class = "showcase3_code_button" href = "https://github.com/ABER1047/Astronaut_remake">
+                        <a id = "showcase3_code_button" class = "showcase3_code_button" href = "https://github.com/ABER1047/Astronaut_remake" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Source Code
                         </a>
                     </li>
@@ -1212,8 +1226,8 @@
                 <div class = "showcase_4">
                     <div class = "showcase_title">
                         <div class = "mobile_mode_margin2"></div>
-                        <h1 class = "showcase_title_sec">Growing box</h1>
-                        <h2 class = "showcase_title_sec_small">박스 키우기</h2>
+                        <h1 id = "showcase4_title_sec" class = "showcase_title_sec" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">Growing box</h1>
+                        <h2 id = "showcase4_title_sec_small" class = "showcase_title_sec_small" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">박스 키우기</h2>
                     </div>
                     
                     <style>
@@ -1280,7 +1294,7 @@
                     </style>
                     
                     <div style = "overflow : hidden">
-                        <div class = "showcase4_image">
+                        <div id = "showcase4_image" class = "showcase4_image" style = "transition : opacity 0.8s; opacity : 0">
                             <div class = "inner">
                             <img class = "showcase_real_img" src = "imgs/box1.PNG" width = "690" height = "388" loading = "lazy">
                             </div>
@@ -1299,7 +1313,7 @@
                         </div>
                     </div>
                     
-                    <div class = "selector_buttons">
+                    <div id = "selector_buttons4" class = "selector_buttons" style = "transition : opacity 0.8s; opacity : 0">
                         <li>
                             <div class = "showcase4_button1"></div>
                             <div class = "showcase4_button2"></div>
@@ -1353,7 +1367,7 @@
                         
                         
                     <div class = "under_box_selector_buttons">
-                        <div class = "in_box_text">
+                        <div id = "in_box_text4" class = "in_box_text" style = "transition : width 0.8s, opacity 0.8s; opacity : 0">
                             <!-- theme 1 -->
                             <span class = "first_text_accent">
                             박
@@ -1413,7 +1427,7 @@
                     </style>
                     
                     <li>
-                        <a class = "showcase4_code_button" href = "https://github.com/ABER1047/Growing-box">
+                        <a id = "showcase4_code_button" class = "showcase4_code_button" href = "https://github.com/ABER1047/Growing-box" style = "transition : opacity 0.8s, top 0.8s; opacity : 0">
                         Source Code
                         </a>
                     </li>
@@ -1924,7 +1938,7 @@
 
         <script>
         var loaded_page = false;
-        
+
         function loading_now()
         {
         loading_bar.style.width = window.innerWidth+"px";
@@ -1956,11 +1970,11 @@
         {
         setTimeout(set_height,1000)
         loaded_page = true;
-        window.scroll({top:0, behavior : "smooth"})
         
         document.getElementById("loading_bar_bg").style.opacity = 0;
         document.getElementById("loading_bar").style.opacity = 0;
         document.getElementById("loading_bar_grad").style.opacity = 0;
+        window.scroll(0,0)
             
         console.log("page_loaded");
         }
@@ -1982,21 +1996,25 @@
         function title1_anime()
         {
         document.getElementById("title").style.opacity = 1;
+        document.getElementById("title").style.top = "0px";
         }
         
         function title2_anime()
         {
         document.getElementById("title_small1").style.opacity = 1;
+        document.getElementById("title_small1").style.top = "260px";
         }
         
         function title3_anime()
         {
         document.getElementById("title_small2").style.opacity = 1;
+        document.getElementById("title_small2").style.top = "330px";
         }
         
         function title_desc_anime()
         {
         document.getElementById("desc_first").style.opacity = 1;
+        document.getElementById("desc_first").style.top = "450px";
         }
         
         function theme_selector_anime()
@@ -2005,6 +2023,246 @@
         document.getElementById("theme_selector_button2").style.opacity = 1;
         document.getElementById("theme_selector_button3").style.opacity = 1;
         document.getElementById("body_t").style.overflowY = "scroll";
+        }
+        
+        
+        
+        
+        
+        
+        
+        $(window).scroll(function()
+        {
+        var scroll = $(window).scrollTop();
+            if (scroll > 1100)
+            {
+            setTimeout(showcase_bg_anime,100)
+            setTimeout(showcase_text1_anime,900)
+            setTimeout(showcase_text2_anime,1000)
+            setTimeout(showcase_buttons_anime,1100)
+            setTimeout(showcase_test_anime,2000)
+            
+            
+            //쇼케이스 1번 실행
+            setTimeout(showcase1_text1_anime,1500)
+            }
+        })
+        
+        function showcase_bg_anime()
+        {
+        document.getElementById("select_menu").style.width = window.innerWidth+"px";
+        document.getElementById("in_box_text1").style.width = window.innerWidth+"px";
+        document.getElementById("in_box_text2").style.width = window.innerWidth+"px";
+        document.getElementById("in_box_text3").style.width = window.innerWidth+"px";
+        document.getElementById("in_box_text4").style.width = window.innerWidth+"px";
+        }
+        
+        
+        
+        
+        //Showcase
+        function showcase_text1_anime()
+        {
+        document.getElementById("title_sec").style.opacity = 1;
+        document.getElementById("title_sec").style.top = "0px";
+        }
+        
+        //쇼케이스
+        function showcase_text2_anime()
+        {
+        document.getElementById("title_sec_small").style.opacity = 1;
+        document.getElementById("title_sec_small").style.top = "0px";
+        }
+
+        //쇼케이스 프로젝트 선택 버튼
+        function showcase_buttons_anime()
+        {
+        document.getElementById("theme_selector_buttons").style.opacity = 1;
+        }
+        
+        
+        
+        
+        //쇼케이스1에 소개된 프로젝트 타이틀1
+        function showcase1_text1_anime()
+        {
+        document.getElementById("showcase1_title_sec").style.opacity = 1;
+        document.getElementById("showcase1_title_sec").style.top = "0px";
+        setTimeout(showcase1_text2_anime,200)
+        }
+        
+        //쇼케이스1에 소개된 프로젝트 타이틀2
+        function showcase1_text2_anime()
+        {
+        document.getElementById("showcase1_title_sec_small").style.opacity = 1;
+        document.getElementById("showcase1_title_sec_small").style.top = "0px";
+        
+        setTimeout(showcase1_image_anime,500)
+        }
+        
+        //쇼케이스1 이미지
+        function showcase1_image_anime()
+        {
+        document.getElementById("showcase1_image").style.opacity = 1;
+        setTimeout(selector_buttons1_anime,100)
+        }
+        
+        //쇼케이스1 이미지 선택 버튼
+        function selector_buttons1_anime()
+        {
+        document.getElementById("selector_buttons1").style.opacity = 1;
+        setTimeout(in_box_text1_anime,500)
+        }
+        
+        //쇼케이스1 설명글
+        function in_box_text1_anime()
+        {
+        document.getElementById("in_box_text1").style.opacity = 1;
+        setTimeout(showcase1_button_anime,1000)
+        }
+        
+        //쇼케이스1 다운로드 버튼
+        function showcase1_button_anime()
+        {
+        document.getElementById("showcase1_trailer_button").style.opacity = 1;
+        
+        document.getElementById("showcase1_code_button").style.opacity = 1;
+        }
+        
+        
+        
+        
+        
+        
+        
+        //쇼케이스2에 소개된 프로젝트 타이틀1
+        function showcase2_text1_anime()
+        {
+        document.getElementById("showcase2_title_sec").style.opacity = 1;
+        document.getElementById("showcase2_title_sec").style.top = "0px";
+        setTimeout(showcase2_text2_anime,200)
+        }
+        
+        //쇼케이스2에 소개된 프로젝트 타이틀2
+        function showcase2_text2_anime()
+        {
+        document.getElementById("showcase2_title_sec_small").style.opacity = 1;
+        document.getElementById("showcase2_title_sec_small").style.top = "0px";
+        
+        setTimeout(showcase2_image_anime,500)
+        }
+        
+        //쇼케이스2 이미지
+        function showcase2_image_anime()
+        {
+        document.getElementById("showcase2_image").style.opacity = 1;
+        setTimeout(selector_buttons2_anime,100)
+        }
+        
+        //쇼케이스2 이미지 선택 버튼
+        function selector_buttons2_anime()
+        {
+        document.getElementById("selector_buttons2").style.opacity = 1;
+        setTimeout(in_box_text2_anime,500)
+        }
+        
+        //쇼케이스2 설명글
+        function in_box_text2_anime()
+        {
+        document.getElementById("in_box_text2").style.opacity = 1;
+        }
+        
+        
+        
+        
+        
+        //쇼케이스3에 소개된 프로젝트 타이틀1
+        function showcase3_text1_anime()
+        {
+        document.getElementById("showcase3_title_sec").style.opacity = 1;
+        document.getElementById("showcase3_title_sec").style.top = "0px";
+        setTimeout(showcase3_text2_anime,200)
+        }
+        
+        //쇼케이스3에 소개된 프로젝트 타이틀2
+        function showcase3_text2_anime()
+        {
+        document.getElementById("showcase3_title_sec_small").style.opacity = 1;
+        document.getElementById("showcase3_title_sec_small").style.top = "0px";
+        
+        setTimeout(showcase3_image_anime,500)
+        }
+        
+        //쇼케이스3 이미지
+        function showcase3_image_anime()
+        {
+        document.getElementById("showcase3_image").style.opacity = 1;
+        setTimeout(selector_buttons3_anime,100)
+        }
+        
+        //쇼케이스3 이미지 선택 버튼
+        function selector_buttons3_anime()
+        {
+        document.getElementById("selector_buttons3").style.opacity = 1;
+        setTimeout(in_box_text3_anime,500)
+        }
+        
+        //쇼케이스3 설명글
+        function in_box_text3_anime()
+        {
+        document.getElementById("in_box_text3").style.opacity = 1;
+        }
+        
+        
+        
+        
+        
+        
+        
+        //쇼케이스4에 소개된 프로젝트 타이틀1
+        function showcase4_text1_anime()
+        {
+        document.getElementById("showcase4_title_sec").style.opacity = 1;
+        document.getElementById("showcase4_title_sec").style.top = "0px";
+        setTimeout(showcase4_text2_anime,200)
+        }
+        
+        //쇼케이스4에 소개된 프로젝트 타이틀2
+        function showcase4_text2_anime()
+        {
+        document.getElementById("showcase4_title_sec_small").style.opacity = 1;
+        document.getElementById("showcase4_title_sec_small").style.top = "0px";
+        
+        setTimeout(showcase4_image_anime,500)
+        }
+        
+        //쇼케이스4 이미지
+        function showcase4_image_anime()
+        {
+        document.getElementById("showcase4_image").style.opacity = 1;
+        setTimeout(selector_buttons4_anime,100)
+        }
+        
+        //쇼케이스4 이미지 선택 버튼
+        function selector_buttons4_anime()
+        {
+        document.getElementById("selector_buttons4").style.opacity = 1;
+        setTimeout(in_box_text4_anime,500)
+        }
+        
+        //쇼케이스4 설명글
+        function in_box_text4_anime()
+        {
+        document.getElementById("in_box_text4").style.opacity = 1;
+        }
+        
+        
+        
+        
+        
+        function showcase_test_anime()
+        {
+        document.getElementById("under_box_selector_buttons").style.opacity = 1;
         }
         
 
