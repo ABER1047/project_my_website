@@ -1,6 +1,6 @@
 # project_my_website
 
-다른 언어도 배우고 싶어서 대충 html이랑 css랑 java script 배우면서 5일만에 뚝딱 만든거
+다른 언어도 배우고 싶어서 대충 html이랑 css랑 java script 배우면서 5일동안 뚝딱 만든거
 
 처음 배운거인데 독학으로 배우는거라 코드가 엉망진창임
 
