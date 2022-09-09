@@ -44,7 +44,21 @@
 }
 
 
+@font-face
+{ 
+font-family : customfont;
+src: url(etc/BM_hanna_air.ttf);
+}
 
+div
+{
+font-family: customfont;
+}
+
+.title_small2
+{
+font-family: none;
+}
 
 
 
