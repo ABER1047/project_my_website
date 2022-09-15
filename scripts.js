@@ -490,6 +490,30 @@ window.scroll(0,scrollY)
 }
 
 
+
+addEventListener("mousemove",function()
+{
+var c_w = window.innerWidth;
+var size_scale = c_w/1280;
+var margin_scale = 1920/c_w;
+var mouse_x = event.clientX;
+var mouse_y = event.clientY;
+
+
+var distance_ratio_xx = (mouse_x - c_w*0.3)*0.012+82;
+var distance_ratio_yy = (mouse_y - size_scale*540)*0.012;
+
+console.log("distance_ratio_xx"+distance_ratio_xx);
+
+document.documentElement.style.setProperty("--margin_title",-32+distance_ratio_xx+"px")
+document.documentElement.style.setProperty("--margin_desc",32*margin_scale+distance_ratio_xx+"px")
+document.documentElement.style.setProperty("--text_margin_top_s",18*margin_scale+distance_ratio_yy+"px")
+document.documentElement.style.setProperty("--title_s1_margin",-16*margin_scale+distance_ratio_yy+"px")
+document.documentElement.style.setProperty("--title_s2_margin",-25*margin_scale+distance_ratio_yy+"px")
+document.documentElement.style.setProperty("--margin_top_desc",-21*margin_scale+distance_ratio_yy+"px")
+})
+
+
 reset_pos_by_win()
 function reset_pos_by_win()
 {
@@ -500,10 +524,11 @@ var size_scale_thi = c_w/640;
 var size_scale_for = c_w/576;
 var size_scale_fif = c_w/320;
 var mid_pos_real = (1920-c_w)*0.5;
+
     if (c_w < 975)
     {
     var margin_scale = 1920/c_w;
-    document.documentElement.style.setProperty("--margin_title","-32px")
+    document.documentElement.style.setProperty("--margin_title",-32+"px")
     document.documentElement.style.setProperty("--margin_desc",4*margin_scale+"px")
     document.documentElement.style.setProperty("--text_margin_top_s",18*margin_scale+"px")
     document.documentElement.style.setProperty("--title_s1_margin",-16*margin_scale+"px")

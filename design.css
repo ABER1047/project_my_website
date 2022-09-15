@@ -126,6 +126,7 @@ padding : 64px;
 line-height : 0px;
 margin : 64px;
 margin-left: var(--margin_title);
+left : -10px;
 margin-top : var(--title_s2_margin);
 margin-bottom : 64px;
 top : 362px;
