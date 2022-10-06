@@ -1,3 +1,5 @@
+
+
 $(window).scroll(function()
 {
 var scroll = $(window).scrollTop();
@@ -18,6 +20,9 @@ var scroll = $(window).scrollTop();
         })
     }
 })
+
+
+
 
 
 
@@ -474,43 +479,31 @@ document.querySelector(".youtube_icon").style.filter = "brightness(0.7)"
 
 
 
-document.addEventListener("mousemove",function()
-{
-reset_scroll_xpos()
-})
-document.addEventListener("mousewheel",function()
-{
-reset_scroll_xpos()
-})
-
-
-function reset_scroll_xpos()
-{
-window.scroll(0,scrollY)
-}
-
 
 
 addEventListener("mousemove",function()
 {
 var c_w = window.innerWidth;
-var size_scale = c_w/1280;
-var margin_scale = 1920/c_w;
-var mouse_x = event.clientX;
-var mouse_y = event.clientY;
+    if (c_w >= 1280)
+    {
+    var size_scale = c_w/1280;
+    var margin_scale = 1920/c_w;
+    var mouse_x = event.clientX;
+    var mouse_y = event.clientY;
 
 
-var distance_ratio_xx = (mouse_x - c_w*0.3)*0.012+82;
-var distance_ratio_yy = (mouse_y - size_scale*540)*0.012;
+    var distance_ratio_xx = (mouse_x - c_w*0.3)*0.012+82;
+    var distance_ratio_yy = (mouse_y - size_scale*540)*0.012;
 
-console.log("distance_ratio_xx"+distance_ratio_xx);
+    console.log("distance_ratio_xx"+distance_ratio_xx);
 
-document.documentElement.style.setProperty("--margin_title",-32+distance_ratio_xx+"px")
-document.documentElement.style.setProperty("--margin_desc",32*margin_scale+distance_ratio_xx+"px")
-document.documentElement.style.setProperty("--text_margin_top_s",18*margin_scale+distance_ratio_yy+"px")
-document.documentElement.style.setProperty("--title_s1_margin",-16*margin_scale+distance_ratio_yy+"px")
-document.documentElement.style.setProperty("--title_s2_margin",-25*margin_scale+distance_ratio_yy+"px")
-document.documentElement.style.setProperty("--margin_top_desc",-21*margin_scale+distance_ratio_yy+"px")
+    document.documentElement.style.setProperty("--margin_title",-32+distance_ratio_xx+"px")
+    document.documentElement.style.setProperty("--margin_desc",32*margin_scale+distance_ratio_xx+"px")
+    document.documentElement.style.setProperty("--text_margin_top_s",18*margin_scale+distance_ratio_yy+"px")
+    document.documentElement.style.setProperty("--title_s1_margin",-16*margin_scale+distance_ratio_yy+"px")
+    document.documentElement.style.setProperty("--title_s2_margin",-25*margin_scale+distance_ratio_yy+"px")
+    document.documentElement.style.setProperty("--margin_top_desc",-21*margin_scale+distance_ratio_yy+"px")
+    }
 })
 
 
@@ -632,8 +625,6 @@ document.documentElement.style.setProperty("--trailer_bg_margin_left",cal_traile
 document.documentElement.style.setProperty("--window_width",c_w+"px")
 console.log(cal_trailer_bg_xpos)
 console.log((c_w-8)+"px")
-
-reset_scroll_xpos()
 }
 
 
@@ -656,7 +647,7 @@ var loaded_page = false;
 function loading_now()
 {
 loading_bar.style.width = window.innerWidth+"px";
-setTimeout(show_page,4500)
+setTimeout(show_page_anime,4500)
 }
 
 var video_ele = document.getElementById("trailer_video")
@@ -664,10 +655,19 @@ video_ele.onloadeddata = function()
 {
 console.log("loaded_video");
 document.getElementById("loading_bar").style.transition = "width 1s";
-setTimeout(show_page,1000);
+setTimeout(show_page_anime,1000);
 }
 
 
+function show_page_anime()
+{
+document.getElementById("loading_bar_bg").style.background = "#02050C";
+document.getElementById("loading_bar").style.background = "#02050C";
+document.getElementById("loading_bar_bg").style.transition = "background 1s, width 1s, opacity 1s";
+document.getElementById("loading_bar").style.transition = "background 1s, width 1s";
+window.scroll(0,0)
+setTimeout(show_page,1000)
+}
 
 $(window).resize(function()
 {
@@ -690,8 +690,7 @@ loaded_page = true;
 document.getElementById("loading_bar_bg").style.opacity = 0;
 document.getElementById("loading_bar").style.opacity = 0;
 document.getElementById("loading_bar_grad").style.opacity = 0;
-window.scroll(0,0)
-    
+
 console.log("page_loaded");
 }
 

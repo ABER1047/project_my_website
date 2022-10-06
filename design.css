@@ -1,49 +1,3 @@
-:root
-{
---margin_title : 32px;
---margin_desc : 96px;
---trailer_bg_margin_left : -8px;
---theme_selector1_pos : 77%;
---theme_selector2_pos : 71%;
---theme_selector3_pos : 66%;
---theme_selector4_pos : 58.5%;
---showcase_title_margin : 0px;
---showcase_title_margin2 : 0px;
---contact_page_margin : 380px;
---contact_button1_pos : 75%;
---contact_button2_pos : 71.8%;
---contact_button3_pos : 68.6%;
---window_width : 100%;
-
---img_width : 0px;
---img_height : 0px;
-
---title_s_text_size : 64px;
-
---text_162px : 162px;
---text_m60px : -60px;
---text_64px : 64px;
---text_16px : 16px;
---text_48px : 48px;
---text_24px : 24px;
---text_32px : 32px;
---text_17_5px : 17.5px;
---text_28px : 28px;
---text_12px : 12px;
---text_m12px : -12px;
---text_10px : 10px;
---text_margin_top_s : 0px;
---title_s1_margin : 0px;
---title_s2_margin : 0px;
---theme_selector1_bg : #547282;
---trailer_button_pos : 39.5%;
---margin_top_desc : 48px;
---text_270px : 270px;
---text_100px : 100px;
---text_485px : 485px;
-}
-
-
 @font-face
 { 
 font-family : customfont;
@@ -717,7 +671,7 @@ transition : background 0.2s;
 .showcase3_code_button
 {
 cursor : pointer;
-background-color : #0C1019;
+background-color : #52648d;
 color : white;
 margin-left : 45%;
 font-size : var(--text_24px);
@@ -949,7 +903,7 @@ height : 1080px;
 top : 0px;
 margin-left : -8px;
 /* background-image: linear-gradient(#192731, #02050C); */
-background : #02050C;
+background : #ffffff;
 transition : width 4.5s, opacity 1s;
 }
 
@@ -970,6 +924,6 @@ position : fixed;
 width : 0px;
 height : 2px;
 margin-left : -8px;
-background : #02050C;
+background : #ffffff;
 transition : width 4.5s;
 }
