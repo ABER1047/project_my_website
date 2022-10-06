@@ -647,7 +647,7 @@ var loaded_page = false;
 function loading_now()
 {
 loading_bar.style.width = window.innerWidth+"px";
-setTimeout(show_page_anime,8500)
+setTimeout(show_page_anime,7500)
 }
 
 var video_ele = document.getElementById("trailer_video")
