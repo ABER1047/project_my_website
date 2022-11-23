@@ -529,10 +529,10 @@ var mid_pos_real = (1920-c_w)*0.5;
     document.documentElement.style.setProperty("--margin_top_desc",-21*margin_scale+"px")
     
     document.documentElement.style.setProperty("--theme_selector1_bg","#ffffff00")
-    document.documentElement.style.setProperty("--theme_selector3_pos","25%")
-    document.documentElement.style.setProperty("--theme_selector2_pos","42.5%")
+    document.documentElement.style.setProperty("--theme_selector3_pos","19%")
+    document.documentElement.style.setProperty("--theme_selector2_pos","39%")
     document.documentElement.style.setProperty("--theme_selector1_pos","58%")
-    
+    document.documentElement.style.setProperty("--center_code_button","35%")
     
     
     document.documentElement.style.setProperty("--showcase_title_margin",16*margin_scale+"px")
@@ -571,15 +571,17 @@ var mid_pos_real = (1920-c_w)*0.5;
     document.documentElement.style.setProperty("--margin_top_desc","48px")
     
     
+    
     document.documentElement.style.setProperty("--theme_selector1_bg","#547282")
     document.documentElement.style.setProperty("--theme_selector1_pos","77%")
     document.documentElement.style.setProperty("--theme_selector2_pos","71%")
     document.documentElement.style.setProperty("--theme_selector3_pos","66%")
+    document.documentElement.style.setProperty("--center_code_button","45%")
     
     
     
     document.documentElement.style.setProperty("--showcase_title_margin","44px")
-    document.documentElement.style.setProperty("--showcase_title_margin2","40px")
+    document.documentElement.style.setProperty("--showcase_title_margin2","27px")
     document.documentElement.style.setProperty("--contact_page_margin","380px")
     
     
@@ -593,7 +595,7 @@ var mid_pos_real = (1920-c_w)*0.5;
     document.documentElement.style.setProperty("--img_height","360px")
     
     
-    document.documentElement.style.setProperty("--trailer_button_pos","39.5%")
+    document.documentElement.style.setProperty("--trailer_button_pos","40%")
     
     
     document.documentElement.style.setProperty("--contact_box_margin","400px")
