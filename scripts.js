@@ -578,8 +578,8 @@ var mid_pos_real = (1920-c_w)*0.5;
     
     
     
-    document.documentElement.style.setProperty("--showcase_title_margin","0px")
-    document.documentElement.style.setProperty("--showcase_title_margin2","27px")
+    document.documentElement.style.setProperty("--showcase_title_margin","44px")
+    document.documentElement.style.setProperty("--showcase_title_margin2","40px")
     document.documentElement.style.setProperty("--contact_page_margin","380px")
     
     
@@ -665,7 +665,6 @@ document.getElementById("loading_bar_bg").style.background = "#02050C";
 document.getElementById("loading_bar").style.background = "#02050C";
 document.getElementById("loading_bar_bg").style.transition = "background 1s, width 1s, opacity 1s";
 document.getElementById("loading_bar").style.transition = "background 1s, width 1s";
-window.scroll(0,0)
 setTimeout(show_page,1000)
 }
 
