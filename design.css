@@ -200,7 +200,7 @@ font : "Open Sans";
 color : #E0C9A8;
 text-align: left;
 padding : 11px;
-margin-top : var(--text_m60px);
+margin-top : var(--text_m44px);
 margin-left: 50%;
 margin-bottom : 0px;
 height : 64px;
@@ -305,52 +305,52 @@ margin-bottom : var(--showcase_title_margin2);
 .showcase_theme_button1
 {
 cursor : pointer;
-background-color : #AD8264; 
-width : var(--text_12px);
-height : var(--text_12px);
+background-color : #8f9db0; 
+width : var(--theme_button_24px);
+height : var(--theme_button_24px);
 border-radius: 6px;
 margin-top : -128px;
 margin-bottom : 0px;
-margin-left : 45.5%;
+margin-left : 45%;
 transition : background 0.2s;
 }
 
 .showcase_theme_button2
 {
 cursor : pointer;
-background-color : #E0C9A8; 
-width : var(--text_12px);
-height : var(--text_12px);
+background-color : #d4d5d7; 
+width : var(--theme_button_24px);
+height : var(--theme_button_24px);
 border-radius: 6px;
-margin-top : var(--text_m12px);
+margin-top : var(--theme_button_m24px);
 margin-bottom : 0px;
-margin-left : 48.5%;
+margin-left : 48%;
 transition : background 0.2s;
 }
 
 .showcase_theme_button3
 {
 cursor : pointer;
-background-color : #E0C9A8; 
-width : var(--text_12px);
-height : var(--text_12px);
+background-color : #d4d5d7; 
+width : var(--theme_button_24px);
+height : var(--theme_button_24px);
 border-radius: 6px;
-margin-top : var(--text_m12px);
+margin-top : var(--theme_button_m24px);
 margin-bottom : 0px;
-margin-left : 51.5%;
+margin-left : 51%;
 transition : background 0.2s;
 }
 
 .showcase_theme_button4
 {
 cursor : pointer;
-background-color : #E0C9A8; 
-width : var(--text_12px);
-height : var(--text_12px);
+background-color : #d4d5d7; 
+width : var(--theme_button_24px);
+height : var(--theme_button_24px);
 border-radius: 6px;
-margin-top : var(--text_m12px);
+margin-top : var(--theme_button_m24px);
 margin-bottom : 0px;
-margin-left : 54.5%;
+margin-left : 54%;
 transition : background 0.2s;
 }
 

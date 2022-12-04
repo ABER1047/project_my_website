@@ -40,10 +40,10 @@ document.querySelector(".showcase_1").style.transform = "translate(0vw)"
 document.querySelector(".showcase_2").style.transform = "translate(-100vw)"
 document.querySelector(".showcase_3").style.transform = "translate(-100vw)"
 document.querySelector(".showcase_4").style.transform = "translate(-100vw)"
-document.querySelector(".showcase_theme_button1").style.background = "#AD8264"
-document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+document.querySelector(".showcase_theme_button1").style.background = "#8f9db0"
+document.querySelector(".showcase_theme_button2").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button3").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button4").style.background = "#d4d5d7"
 })
 
 document.querySelector(".showcase_theme_button2").addEventListener("click",function()
@@ -53,10 +53,10 @@ document.querySelector(".showcase_2").style.transform = "translate(0vw)"
 document.querySelector(".showcase_3").style.transform = "translate(-100vw)"
 document.querySelector(".showcase_4").style.transform = "translate(-100vw)"
 
-document.querySelector(".showcase_theme_button1").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button2").style.background = "#AD8264"
-document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+document.querySelector(".showcase_theme_button1").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button2").style.background = "#8f9db0"
+document.querySelector(".showcase_theme_button3").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button4").style.background = "#d4d5d7"
 
 //쇼케이스 2번 애니메이션 실행
 setTimeout(showcase2_text1_anime,100)
@@ -69,10 +69,10 @@ document.querySelector(".showcase_2").style.transform = "translate(-100vw)"
 document.querySelector(".showcase_3").style.transform = "translate(0vw)"
 document.querySelector(".showcase_4").style.transform = "translate(-100vw)"
 
-document.querySelector(".showcase_theme_button1").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button3").style.background = "#AD8264"
-document.querySelector(".showcase_theme_button4").style.background = "#E0C9A8"
+document.querySelector(".showcase_theme_button1").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button2").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button3").style.background = "#8f9db0"
+document.querySelector(".showcase_theme_button4").style.background = "#d4d5d7"
 
 //쇼케이스 3번 애니메이션 실행
 setTimeout(showcase3_text1_anime,100)
@@ -85,10 +85,10 @@ document.querySelector(".showcase_2").style.transform = "translate(-100vw)"
 document.querySelector(".showcase_3").style.transform = "translate(-100vw)"
 document.querySelector(".showcase_4").style.transform = "translate(0vw)"
 
-document.querySelector(".showcase_theme_button1").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button2").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button3").style.background = "#E0C9A8"
-document.querySelector(".showcase_theme_button4").style.background = "#AD8264"
+document.querySelector(".showcase_theme_button1").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button2").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button3").style.background = "#d4d5d7"
+document.querySelector(".showcase_theme_button4").style.background = "#8f9db0"
 
 //쇼케이스 4번 애니메이션 실행
 setTimeout(showcase4_text1_anime,100)
@@ -159,7 +159,7 @@ document.querySelector(".showcase1_trailer_button").style.border = "2px solid #5
 
 document.querySelector(".showcase1_code_button").addEventListener("mouseover",function()
 {
-document.querySelector(".showcase1_code_button").style.background = "#2E465C"
+document.querySelector(".showcase1_code_button").style.background = "#547282"
 })
 
 document.querySelector(".showcase1_code_button").addEventListener("mouseleave",function()
@@ -228,7 +228,7 @@ document.querySelector(".showcase2_trailer_button").style.border = "2px solid #5
 
 document.querySelector(".showcase2_code_button").addEventListener("mouseover",function()
 {
-document.querySelector(".showcase2_code_button").style.background = "#2E465C"
+document.querySelector(".showcase2_code_button").style.background = "#547282"
 })
 
 document.querySelector(".showcase2_code_button").addEventListener("mouseleave",function()
@@ -281,7 +281,7 @@ document.querySelector(".showcase3_button4").style.background = "#AD8264"
 
 document.querySelector(".showcase3_code_button").addEventListener("mouseover",function()
 {
-document.querySelector(".showcase3_code_button").style.background = "#2E465C"
+document.querySelector(".showcase3_code_button").style.background = "#547282"
 })
 
 document.querySelector(".showcase3_code_button").addEventListener("mouseleave",function()
@@ -340,7 +340,7 @@ document.querySelector(".showcase4_button4").style.background = "#AD8264"
 
 document.querySelector(".showcase4_code_button").addEventListener("mouseover",function()
 {
-document.querySelector(".showcase4_code_button").style.background = "#2E465C"
+document.querySelector(".showcase4_code_button").style.background = "#547282"
 })
 
 document.querySelector(".showcase4_code_button").addEventListener("mouseleave",function()
@@ -554,6 +554,11 @@ var mid_pos_real = (1920-c_w)*0.5;
     
     
     document.documentElement.style.setProperty("--contact_box_margin",mid_pos_real*0.8+"px")
+    
+    document.documentElement.style.setProperty("--text_m44px",-60*size_scale_for+"px")
+    
+    document.documentElement.style.setProperty("--theme_button_24px",12*size_scale_thi+"px")
+    document.documentElement.style.setProperty("--theme_button_m24px",-12*size_scale_thi+"px")
     }
     else
     {
@@ -599,6 +604,11 @@ var mid_pos_real = (1920-c_w)*0.5;
     
     
     document.documentElement.style.setProperty("--contact_box_margin","400px")
+    
+    document.documentElement.style.setProperty("--text_m44px",-44/(c_w/1980)+"px")
+    
+    document.documentElement.style.setProperty("--theme_button_24px",20*size_scale_thi+"px")
+    document.documentElement.style.setProperty("--theme_button_m24px",-20*size_scale_thi+"px")
     }
     
     
@@ -613,6 +623,7 @@ document.documentElement.style.setProperty("--text_16px",16*size_scale_for+"px")
 document.documentElement.style.setProperty("--text_17_5px",17.5*size_scale_for+"px")
 document.documentElement.style.setProperty("--text_12px",12*size_scale_for+"px")
 document.documentElement.style.setProperty("--text_m12px",-12*size_scale_for+"px")
+document.documentElement.style.setProperty("--text_m24px",-24*size_scale_thi+"px")
 document.documentElement.style.setProperty("--text_m60px",-60*size_scale_for+"px")
 document.documentElement.style.setProperty("--text_m32px",-32/(c_w/1980)+"px")
 document.documentElement.style.setProperty("--text_10px",12*size_scale_for+"px")
@@ -620,6 +631,7 @@ document.documentElement.style.setProperty("--text_270px",270*size_scale_fif+"px
 document.documentElement.style.setProperty("--text_100px",100*size_scale_thi+"px")
 document.documentElement.style.setProperty("--text_485px",485*size_scale_for+"px")
     
+
 
 
 var cal_trailer_bg_xpos = (-(1920-c_w)*0.5)+"px"
