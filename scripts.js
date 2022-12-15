@@ -19,8 +19,8 @@ var scroll = $(window).scrollTop();
         opacity : 1
         })
     }
+document.querySelector(".trailer_video").style.transform = "translateY(-"+scroll+"px)"
 })
-
 
 
 
