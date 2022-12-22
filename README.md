@@ -6,6 +6,14 @@
 
 만들다가 재밌어서 심심할때마다 계속 이것저것 추가중
 
+
+### 2022-12-23 추가
+
+코드가 개판이라 유지 보수가 힘들어서 <a href = "https://github.com/ABER1047/Project_aboutme/tree/main">새로 리메이크</a> 했음
+
+
+
+
 ### ▼ 미리보기
 
 ![preview_0](preview.gif)
